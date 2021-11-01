@@ -17,7 +17,7 @@ class Secondary_Button_Img extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       width: double.infinity,
-      height: 56,
+      height: 50,
       child: OutlinedButton(
         style: OutlinedButton.styleFrom(
             shape:

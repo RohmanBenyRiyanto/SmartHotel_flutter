@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:smart_hotel/components/default_button.dart';
-import 'package:smart_hotel/components/secondary_button_with_image.dart';
+import 'package:smart_hotel/components/button/default_button.dart';
+import 'package:smart_hotel/components/button/secondary_button_with_image.dart';
 import 'package:smart_hotel/theme/color.dart';
 import 'package:flutter/gestures.dart';
 
@@ -36,7 +36,7 @@ class _SignFormState extends State<SignForm> {
                     fontWeight: FontWeight.w400),
                 floatingLabelBehavior: FloatingLabelBehavior.always,
                 contentPadding:
-                    EdgeInsets.symmetric(horizontal: 20, vertical: 18),
+                    EdgeInsets.symmetric(horizontal: 20, vertical: 16),
                 enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(6),
                   borderSide: BorderSide(color: color_abu),
@@ -73,7 +73,7 @@ class _SignFormState extends State<SignForm> {
                   child: SvgPicture.asset('assets/svg/show_psswrd.svg'),
                 ),
                 contentPadding:
-                    EdgeInsets.symmetric(horizontal: 20, vertical: 18),
+                    EdgeInsets.symmetric(horizontal: 20, vertical: 16),
                 enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(6),
                   borderSide: BorderSide(color: color_abu),

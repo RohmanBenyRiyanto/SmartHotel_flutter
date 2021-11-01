@@ -2,8 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:smart_hotel/routes.dart';
-import 'package:smart_hotel/splash_screen.dart';
 
+import 'package:smart_hotel/sign/sign_up/sign_up.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       // home: SplashScreen(),
       // We use routeName so that we dont need to remember the name
-      initialRoute: SplashScreen.routeName,
+      initialRoute: SignUp.routeName,
       routes: routes,
     );
   }
