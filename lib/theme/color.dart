@@ -11,8 +11,3 @@ const color_orange = Color(0xFFFF8A65);
 const color_grey = Color(0xFFBAB9D0);
 const color_abu = Color(0xFFA3A3A3);
 const color_heading_1 = Color(0xFF5B5B5B);
-const color_gradient = LinearGradient(
-  begin: Alignment.topCenter,
-  end: Alignment.bottomCenter,
-  colors: [Color(0xFF7986CB), Color(0xFF4DD0E1)],
-);
