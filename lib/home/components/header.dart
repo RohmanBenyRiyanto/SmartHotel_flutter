@@ -52,7 +52,7 @@ class HeaderWithSearchBox extends StatelessWidget {
                       print("Notification");
                     },
                     child: Badge(
-                      padding: EdgeInsets.all(5),
+                      padding: EdgeInsets.all(3),
                       badgeColor: color_orange,
                       shape: BadgeShape.circle,
                       position: BadgePosition.topEnd(),
@@ -62,13 +62,13 @@ class HeaderWithSearchBox extends StatelessWidget {
                         style: TextStyle(
                           color: color_white,
                           fontFamily: 'Poppins',
-                          fontSize: 12,
+                          fontSize: 9,
                           fontWeight: FontWeight.w500,
                         ),
                       ),
                       child: SvgPicture.asset(
                         "assets/svg/lonceng.svg",
-                        height: 30,
+                        height: 24,
                       ),
                     ),
                   ),
@@ -82,7 +82,7 @@ class HeaderWithSearchBox extends StatelessWidget {
             right: 0,
             child: Container(
               alignment: Alignment.center,
-              margin: EdgeInsets.symmetric(horizontal: kDefaultPadding),
+              margin: EdgeInsets.symmetric(horizontal: KPadding),
               padding: EdgeInsets.symmetric(horizontal: 8),
               height: 54,
               decoration: BoxDecoration(
