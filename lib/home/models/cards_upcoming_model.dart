@@ -1,4 +1,3 @@
-import 'package:smart_hotel/home/models/activity_model.dart';
 
 class Upcomming {
   String imageUrl;

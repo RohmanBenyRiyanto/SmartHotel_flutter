@@ -119,7 +119,7 @@ class HeaderWithSearchBox extends StatelessWidget {
                     ),
                   ),
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {print("Cari");},
                     child: SvgPicture.asset("assets/svg/mini_search.svg"),
                     style: ElevatedButton.styleFrom(
                       shape: CircleBorder(),
