@@ -12,34 +12,6 @@ class Upcomming {
 
   get length => null;
 }
-
-// List<Activity> activities = [
-//   Activity(
-//     imageUrl: 'assets/images/hotel_one.png',
-//     name: 'Smotel\'s Tebet',
-//     rating: 5,
-//     price: 150000,
-//   ),
-//   Activity(
-//     imageUrl: 'assets/images/hotel_one.png',
-//     name: 'Smotel\'s Tebet',
-//     rating: 5,
-//     price: 150000,
-//   ),
-//   Activity(
-//     imageUrl: 'assets/images/hotel_one.png',
-//     name: 'Smotel\'s Tebet',
-//     rating: 5,
-//     price: 150000,
-//   ),
-//   Activity(
-//     imageUrl: 'assets/images/hotel_one.png',
-//     name: 'Smotel\'s Tebet',
-//     rating: 5,
-//     price: 150000,
-//   ),
-// ];
-
 List<Upcomming> upcommings = [
   Upcomming(
     imageUrl: 'assets/images/hotel_two.png',

@@ -40,6 +40,7 @@ dependencies:
   clickabletext: ^0.0.2
   badges: ^2.0.1
   simple_shadow: ^0.2.0
+  persistent_bottom_nav_bar: ^4.0.2
 
 
 dev_dependencies:

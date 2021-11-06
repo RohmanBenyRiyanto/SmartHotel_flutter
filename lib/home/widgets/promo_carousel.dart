@@ -57,7 +57,7 @@ class Promo_carousel extends StatelessWidget {
                   style: TextStyle(
                     color: color_black,
                     fontFamily: 'Poppins',
-                    fontSize: 18,
+                    fontSize: 20,
                     fontWeight: FontWeight.w600,
                   ),
                 ),
