@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:smart_hotel/home/components/header.dart';
-import 'package:smart_hotel/home/components/promo_carousel.dart';
-import 'package:smart_hotel/home/components/schedule_carousel.dart';
+import 'package:smart_hotel/home/widgets/header.dart';
+import 'package:smart_hotel/home/widgets/promo_carousel.dart';
+import 'package:smart_hotel/home/widgets/schedule_carousel.dart';
 import 'package:smart_hotel/theme/color.dart';
 import 'package:smart_hotel/theme/const.dart';
 

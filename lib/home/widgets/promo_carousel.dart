@@ -3,8 +3,6 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:simple_shadow/simple_shadow.dart';
-import 'package:smart_hotel/home/models/cards_upcoming_model.dart';
-import 'package:flutter_svg/avd.dart';
 import 'package:smart_hotel/home/models/promo.dart';
 import 'package:smart_hotel/theme/color.dart';
 import 'package:smart_hotel/theme/const.dart';
@@ -19,31 +17,31 @@ class Promo_carousel extends StatelessWidget {
           'Promo Natal',
           Color(0xff6DC8F3),
           Color(0xff73A1F9),
-          'Periode pemesanan 25 Desember - 1 Januari 2022',
+          'Periode pemesanan 25\nDesember - 1 Januari 2022',
           'assets/svg/il_natal.svg'),
       PlaceInfo(
           'Voucher Smotel',
           Color(0xffFFB157),
           Color(0xffFFA057),
-          'Periode pemesanan 25 Desember - 1 Januari 2022',
+          'Periode pemesanan 25\nDesember - 1 Januari 2022',
           'assets/svg/diskon.svg'),
       PlaceInfo(
           'Promo Natal',
           Color(0xffFF5B95),
           Color(0xffF8556D),
-          'Periode pemesanan 25 Desember - 1 Januari 2022',
+          'Periode pemesanan 25\nDesember - 1 Januari 2022',
           'assets/svg/il_natal.svg'),
       PlaceInfo(
           'Voucher Smotel',
           Color(0xffD76EF5),
           Color(0xff8F7AFE),
-          'Periode pemesanan 25 Desember - 1 Januari 2022',
+          'Periode pemesanan 25\nDesember - 1 Januari 2022',
           'assets/svg/diskon.svg'),
       PlaceInfo(
           'Promo Natal',
           Color(0xff42E695),
           Color(0xff3BB2B8),
-          'Periode pemesanan 25 Desember - 1 Januari 2022',
+          'Periode pemesanan 25\nDesember - 1 Januari 2022',
           'assets/svg/il_natal.svg'),
     ];
     return Container(
