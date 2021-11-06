@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "239357026859",
+    "project_id": "smotel-9f156",
+    "storage_bucket": "smotel-9f156.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:239357026859:android:e1e4c041503cd96bf9c06e",
+        "android_client_info": {
+          "package_name": "com.example.smart_hotel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "239357026859-34q708lklteipkmbdm06870ii5d062ve.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.smart_hotel",
+            "certificate_hash": "b2275d0e82b69b5b4041e771ea9c102f9f8ac618"
+          }
+        },
+        {
+          "client_id": "239357026859-fmshs4abcumgh3npje6htmbskee2elmv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLsQJ92nEF9HVHgZ72_VyBRXoxuOHVqYA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "239357026859-fmshs4abcumgh3npje6htmbskee2elmv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
