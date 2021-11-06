@@ -1,4 +1,5 @@
 import 'package:flutter/widgets.dart';
+import 'package:smart_hotel/Profile/profile.dart';
 import 'package:smart_hotel/home/home.dart';
 import 'package:smart_hotel/sign/forgot_password/new_password.dart';
 import 'package:smart_hotel/sign/forgot_password/password_hint.dart';
@@ -17,4 +18,5 @@ final Map<String, WidgetBuilder> routes = {
   Home.routeName: (context) => Home(),
   PasswordHint.routeName: (context) => PasswordHint(),
   NewPassword.routeName: (context) => NewPassword(),
+  profile.routeName: (context) => profile(),
 };
