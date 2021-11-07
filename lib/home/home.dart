@@ -6,8 +6,6 @@ import 'package:smart_hotel/home/widgets/sekitar_anda.dart';
 import 'package:smart_hotel/theme/color.dart';
 
 class Home extends StatelessWidget {
-  
-
   static String routeName = "/home";
   @override
   Widget build(BuildContext context) {
@@ -32,46 +30,12 @@ class Home extends StatelessWidget {
               height: 5,
             ),
             CardsSekitarAnda(),
+            SizedBox(
+              height: 25,
+            ),
           ],
         ),
         bottom: false,
-      ),
-      floatingActionButton:
-          FloatingActionButton(onPressed: () {}, child: Icon(Icons.qr_code)),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-      bottomNavigationBar: BottomAppBar(
-        shape: CircularNotchedRectangle(),
-        notchMargin: 6,
-        color: color_main,
-        elevation: 0,
-        child: Container(
-          height: 80,
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: <Widget>[
-                Icon(
-                  Icons.home,
-                  size: 40.0,
-                ),
-                Icon(
-                  Icons.home,
-                  size: 40.0,
-                ),
-                SizedBox.shrink(),
-                Icon(
-                  Icons.home,
-                  size: 40.0,
-                ),
-                Icon(
-                  Icons.home,
-                  size: 40.0,
-                ),
-              ],
-            ),
-          ),
-        ),
       ),
     );
   }

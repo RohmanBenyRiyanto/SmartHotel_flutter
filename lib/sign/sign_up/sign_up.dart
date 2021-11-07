@@ -7,8 +7,10 @@ class SignUp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBody: true,
       body: SafeArea(
         child: body_singup(),
+        bottom: false,
       ),
     );
   }

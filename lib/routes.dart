@@ -1,5 +1,6 @@
 import 'package:flutter/widgets.dart';
 import 'package:smart_hotel/Profile/profile.dart';
+import 'package:smart_hotel/bottom_bar/bottom_bar.dart';
 import 'package:smart_hotel/home/home.dart';
 import 'package:smart_hotel/sign/forgot_password/new_password.dart';
 import 'package:smart_hotel/sign/forgot_password/password_hint.dart';

@@ -40,7 +40,7 @@ dependencies:
   clickabletext: ^0.0.2
   badges: ^2.0.1
   simple_shadow: ^0.2.0
-  persistent_bottom_nav_bar: ^4.0.2
+  curved_navigation_bar: ^1.0.1
 
 
 dev_dependencies:
@@ -89,6 +89,10 @@ flutter:
         - asset: fonts/Poppins-Medium.otf
         - asset: fonts/Poppins-Bold.otf
           weight: 700
+    - family:  MyFlutterApp
+      fonts:
+        - asset: fonts/MyFlutterApp.ttf
+
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

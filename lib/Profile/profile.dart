@@ -6,8 +6,10 @@ class profile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBody: true,
       body: SafeArea(
         child: body_profile(),
+                bottom: false,
       ),
     );
   }
