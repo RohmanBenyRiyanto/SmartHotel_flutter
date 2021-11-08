@@ -11,3 +11,4 @@ const color_orange = Color(0xFFFF8A65);
 const color_grey = Color(0xFFBAB9D0);
 const color_abu = Color(0xFFA3A3A3);
 const color_heading_1 = Color(0xFF5B5B5B);
+const color_status = Color(0xFF949DCD);

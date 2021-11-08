@@ -41,6 +41,7 @@ dependencies:
   badges: ^2.0.1
   simple_shadow: ^0.2.0
   curved_navigation_bar: ^1.0.1
+  dotted_line: ^3.1.0
 
 
 dev_dependencies:

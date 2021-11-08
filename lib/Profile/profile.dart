@@ -9,7 +9,7 @@ class profile extends StatelessWidget {
       extendBody: true,
       body: SafeArea(
         child: body_profile(),
-                bottom: false,
+        bottom: false,
       ),
     );
   }
