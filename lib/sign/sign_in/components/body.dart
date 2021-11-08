@@ -54,6 +54,7 @@ class body extends StatelessWidget {
                   height: 30,
                 ),
                 Container(
+                  margin: EdgeInsets.only(bottom: 20),
                   height: 415,
                   width: 380,
                   decoration: BoxDecoration(
@@ -66,7 +67,7 @@ class body extends StatelessWidget {
                       SizedBox(
                         height: 30,
                       ),
-                      SignForm()
+                      SignForm(),
                     ],
                   ),
                 ),

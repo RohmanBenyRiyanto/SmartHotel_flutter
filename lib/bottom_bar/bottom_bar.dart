@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:smart_hotel/Profile/profile.dart';
 import 'package:smart_hotel/bottom_bar/fixfloatingbutton.dart';
 import 'package:smart_hotel/home/home.dart';
@@ -37,7 +38,13 @@ class _BottomNaviBarState extends State<BottomNaviBar> {
       floatingActionButtonLocation: const FixedCenterDockedFabLocation(),
       floatingActionButton: FloatingActionButton(
         backgroundColor: color_main,
-        onPressed: () {},
+        onPressed: () {
+          //kemana floatbutton mau pergi
+          showDialog(
+            context: context,
+            builder: (BuildContext context) => _buildPopupDialog(context),
+          );
+        },
         // pop jika tampilan scan sudah di buat
         // onPressed: () => Navigator.of(context).pop(),
         tooltip: 'Scan',
@@ -134,4 +141,104 @@ class _BottomNaviBarState extends State<BottomNaviBar> {
       currentIndex = index;
     });
   }
+}
+
+//Pop Up
+Widget _buildPopupDialog(BuildContext context) {
+  return new AlertDialog(
+    shape: RoundedRectangleBorder(
+      borderRadius: BorderRadius.all(
+        Radius.circular(10.0),
+      ),
+    ),
+    title: Column(
+      children: [
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            const Text(
+              'No Kamar',
+              style: TextStyle(
+                  color: color_main,
+                  fontFamily: 'Poppins',
+                  fontSize: 14,
+                  fontWeight: FontWeight.w500),
+            ),
+            const Text(
+              '230',
+              style: TextStyle(
+                  color: color_main,
+                  fontFamily: 'Poppins',
+                  fontSize: 20,
+                  fontWeight: FontWeight.w600),
+            ),
+          ],
+        ),
+        SizedBox(
+          height: 15,
+        ),
+        Container(
+          width: 230,
+          height: 230,
+          decoration: BoxDecoration(
+            image: DecorationImage(
+                image: ExactAssetImage('assets/images/qr_code.png'),
+                fit: BoxFit.cover),
+          ),
+        ),
+        SizedBox(
+          height: 15,
+        ),
+        Text(
+          'Silahkan melakukan scanning\npada pintu kamar Anda',
+          style: TextStyle(
+            color: color_main,
+            fontFamily: 'Poppins',
+            fontSize: 14,
+            fontWeight: FontWeight.w500,
+          ),
+          textAlign: TextAlign.center,
+        ),
+        SizedBox(
+          height: 15,
+        ),
+        Row(
+          mainAxisSize: MainAxisSize.max,
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            Container(
+              height: 38,
+              child: TextButton(
+                style: TextButton.styleFrom(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  primary: color_white,
+                  backgroundColor: color_orange,
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 20.0, right: 20.0),
+                  child: Text(
+                    'Tutup',
+                    style: TextStyle(
+                      fontFamily: 'Poppins',
+                      fontSize: 14,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                ),
+                onPressed: () {
+                  Navigator.of(context).pop();
+                },
+              ),
+            ),
+          ],
+        ),
+        SizedBox(
+          height: 5,
+        ),
+      ],
+    ),
+  );
 }
