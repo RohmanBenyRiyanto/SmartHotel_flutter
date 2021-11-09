@@ -55,7 +55,7 @@ class body extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.only(bottom: 20),
-                  height: 415,
+                  height: 390,
                   width: 380,
                   decoration: BoxDecoration(
                     color: color_white,

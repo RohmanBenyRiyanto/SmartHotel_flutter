@@ -55,7 +55,7 @@ class body_singup extends StatelessWidget {
                   height: 30,
                 ),
                 Container(
-                  height: 500,
+                  height: 465,
                   width: 380,
                   decoration: BoxDecoration(
                     color: color_white,

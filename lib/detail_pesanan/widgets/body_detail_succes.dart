@@ -395,7 +395,7 @@ Widget _buildPopupDialog(BuildContext context) {
           children: <Widget>[
             Container(
               height: 38,
-
+              width: 100,
               child: TextButton(
                 style: TextButton.styleFrom(
                   shape: RoundedRectangleBorder(

@@ -75,12 +75,11 @@ class CardsSekitarAnda extends StatelessWidget {
                                     Text(
                                       sekitars.nama_hotel,
                                       style: TextStyle(
-                                        color: color_black,
-                                        fontFamily: 'Poppins',
-                                        fontSize: 18,
-                                        fontWeight: FontWeight.w600,
-                                        height: 1.2
-                                      ),
+                                          color: color_black,
+                                          fontFamily: 'Poppins',
+                                          fontSize: 18,
+                                          fontWeight: FontWeight.w600,
+                                          height: 1.2),
                                       maxLines: 2,
                                     ),
                                     Row(
@@ -203,7 +202,9 @@ class CardsSekitarAnda extends StatelessWidget {
                                             ),
                                           ),
                                         ),
-                                        onPressed: () {},
+                                        onPressed: () {
+                                          print('Pilih Kamar');
+                                        },
                                       ),
                                     ),
                                   ],

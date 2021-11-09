@@ -3,6 +3,7 @@ import 'package:smart_hotel/Profile/profile.dart';
 import 'package:smart_hotel/bottom_bar/bottom_bar.dart';
 import 'package:smart_hotel/detail_pesanan/detail_pesanan_succes.dart';
 import 'package:smart_hotel/home/home.dart';
+import 'package:smart_hotel/my_room/my_room.dart';
 import 'package:smart_hotel/sign/forgot_password/new_password.dart';
 import 'package:smart_hotel/sign/forgot_password/password_hint.dart';
 import 'package:smart_hotel/sign/forgot_password/search_account.dart';
@@ -22,4 +23,6 @@ final Map<String, WidgetBuilder> routes = {
   NewPassword.routeName: (context) => NewPassword(),
   profile.routeName: (context) => profile(),
   DetailPesananSucces.routeName: (context) => DetailPesananSucces(),
+  MyRoom.routeName: (context) => MyRoom(),
+  BottomNaviBar.routeName: (context) => BottomNaviBar(),
 };

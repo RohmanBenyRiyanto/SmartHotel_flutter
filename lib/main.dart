@@ -2,10 +2,10 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:smart_hotel/detail_pesanan/detail_pesanan_succes.dart';
 import 'package:smart_hotel/routes.dart';
-import 'package:smart_hotel/splash_screen.dart';
 import 'package:smart_hotel/theme/color.dart';
+
+import 'bottom_bar/bottom_bar.dart';
 
 void main() => runApp(MyApp());
 
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
       title: 'Smart Hotel',
       // home: SplashScreen(),
       // We use routeName so that we dont need to remember the name
-      initialRoute: DetailPesananSucces.routeName,
+      initialRoute: BottomNaviBar.routeName,
       routes: routes,
     );
   }
