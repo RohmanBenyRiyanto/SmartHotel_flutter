@@ -30,7 +30,7 @@ class hotel_services extends StatelessWidget {
             height: 16,
           ),
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               GestureDetector(
@@ -126,6 +126,9 @@ class hotel_services extends StatelessWidget {
                     ],
                   ),
                 ),
+              ),
+              SizedBox(
+                width: 10,
               ),
               GestureDetector(
                 onTap: () {

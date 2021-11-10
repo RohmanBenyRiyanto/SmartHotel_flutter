@@ -18,3 +18,4 @@ const color_abu = Color(0xFFA3A3A3);
 const color_heading_1 = Color(0xFF5B5B5B);
 const color_status = Color(0xFF949DCD);
 const color_red = Color(0xFFFF0000);
+const color_off = Color(0xFFC8C8C8);
