@@ -64,7 +64,7 @@ class _BodyLampuState extends State<BodyLampu> {
                   height: 10,
                 ),
                 Text(
-                  onoff ? 'Click to turn off' : 'Click to turn on',
+                  onoff ? 'Click to turn on' : 'Click to turn off',
                   style: TextStyle(
                     color: onoff ? color_off : color_main,
                     fontFamily: 'Poppins',
