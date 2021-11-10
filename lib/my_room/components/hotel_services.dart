@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:smart_hotel/my_room/widget/lampu.dart';
 import 'package:smart_hotel/theme/color.dart';
 import 'package:smart_hotel/theme/const.dart';
 
@@ -34,11 +35,15 @@ class hotel_services extends StatelessWidget {
             children: <Widget>[
               GestureDetector(
                 onTap: () {
-                  print("Lampu clicked");
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Lampu()),
+                  );
+                  print('Lamp Clicked');
                 },
                 child: Container(
-                  height: 143,
-                  width: 160,
+                  height: 140,
+                  width: 157,
                   decoration: BoxDecoration(
                     color: color_purple_muda,
                     borderRadius: BorderRadius.circular(16),
@@ -55,7 +60,7 @@ class hotel_services extends StatelessWidget {
                       ),
                       Positioned(
                         top: 85.0,
-                        left: 7,
+                        left: 10,
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
@@ -95,27 +100,22 @@ class hotel_services extends StatelessWidget {
                                   ),
                                 ),
                                 SizedBox(
+                                  width: 35,
+                                ),
+                                SvgPicture.asset(
+                                  'assets/svg/ic_kecerahan.svg',
+                                  height: 15,
+                                ),
+                                SizedBox(
                                   width: 5,
                                 ),
                                 Text(
-                                  'Kecerahan',
+                                  '100' + '%',
                                   style: TextStyle(
                                     color: color_purple,
                                     fontFamily: 'Poppins',
                                     fontSize: 12,
-                                    fontWeight: FontWeight.w300,
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 2,
-                                ),
-                                Text(
-                                  '80' + '%',
-                                  style: TextStyle(
-                                    color: color_purple,
-                                    fontFamily: 'Poppins',
-                                    fontSize: 12,
-                                    fontWeight: FontWeight.w600,
+                                    fontWeight: FontWeight.w500,
                                   ),
                                 ),
                               ],
@@ -132,8 +132,8 @@ class hotel_services extends StatelessWidget {
                   print("AC clicked");
                 },
                 child: Container(
-                  height: 143,
-                  width: 160,
+                  height: 140,
+                  width: 157,
                   decoration: BoxDecoration(
                     color: color_orange_muda,
                     borderRadius: BorderRadius.circular(16),
@@ -150,7 +150,7 @@ class hotel_services extends StatelessWidget {
                       ),
                       Positioned(
                         top: 85.0,
-                        left: 7,
+                        left: 10,
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
@@ -182,7 +182,7 @@ class hotel_services extends StatelessWidget {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 35.0,
+                                  width: 30.0,
                                 ),
                                 SvgPicture.asset(
                                   'assets/svg/ic_cool.svg',
