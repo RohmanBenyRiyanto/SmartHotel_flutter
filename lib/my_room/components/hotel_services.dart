@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:smart_hotel/my_room/widget/lampu.dart';
+import 'package:smart_hotel/my_room/widget/AC.dart';
 import 'package:smart_hotel/theme/color.dart';
 import 'package:smart_hotel/theme/const.dart';
 
@@ -132,6 +133,10 @@ class hotel_services extends StatelessWidget {
               ),
               GestureDetector(
                 onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => AC()),
+                  );
                   print("AC clicked");
                 },
                 child: Container(
