@@ -44,6 +44,11 @@ dependencies:
   font_awesome_flutter: ^9.2.0
   simple_shadow: ^0.2.0
   switcher_button: ^0.0.4
+  
+  # Firebase dependencies DO NOT REMOVE!
+  firebase_auth: ^3.2.0
+  firebase_core: ^1.10.0
+  google_sign_in: ^5.2.1
 
 dev_dependencies:
   flutter_lints: ^1.0.0
