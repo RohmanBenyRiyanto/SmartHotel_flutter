@@ -363,15 +363,30 @@ Widget _buildPopupDialog(BuildContext context) {
         SizedBox(
           height: 15,
         ),
-        Container(
-          width: 230,
-          height: 230,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-                image: ExactAssetImage('assets/images/qr_code.png'),
-                fit: BoxFit.cover),
+        Visibility(
+          visible: true,
+          child: Container(
+            width: 230,
+            height: 230,
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                  image: ExactAssetImage('assets/images/qr_code.png'),
+                  fit: BoxFit.cover),
+            ),
           ),
         ),
+        //Tampil bila Qr Code belum tersedia
+        // Visibility(
+        //   visible: false,
+        //   child: Container(
+        //     width: 230,
+        //     height: 230,
+        //     child: Text(
+        //       'SOON',
+        //       //Tinggal tambahin style
+        //     ),
+        //   ),
+        // ),
         SizedBox(
           height: 15,
         ),
