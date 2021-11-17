@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:smart_hotel/Profile/profile.dart';
+// import 'package:smart_hotel/Profile/profile.dart';
 import 'package:smart_hotel/bottom_bar/fixfloatingbutton.dart';
-import 'package:smart_hotel/home/home.dart';
+// import 'package:smart_hotel/home/home.dart';
 import 'package:smart_hotel/my_flutter_app_icons.dart';
-import 'package:smart_hotel/my_room/my_room.dart';
-import 'package:smart_hotel/sign/forgot_password/search_account.dart';
-import 'package:smart_hotel/sign/sign_in/sign_in.dart';
+// import 'package:smart_hotel/my_room/my_room.dart';
+// import 'package:smart_hotel/sign/forgot_password/search_account.dart';
+// import 'package:smart_hotel/sign/sign_in/sign_in.dart';
 import 'package:smart_hotel/app/theme/color.dart';
 
 class BottomNaviBar extends StatefulWidget {
@@ -19,10 +19,10 @@ class BottomNaviBar extends StatefulWidget {
 class _BottomNaviBarState extends State<BottomNaviBar> {
   int currentIndex = 0;
   final List<Widget> body = [
-    Home(),
-    SignIn(),
-    MyRoom(),
-    profile(),
+    // Home(),
+    // SignIn(),
+    // MyRoom(),
+    // profile(),
   ];
   @override
   Widget build(BuildContext context) {

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:smart_hotel/app/theme/color.dart';
 
-import 'bottom_bar/bottom_bar.dart';
+// import 'bottom_bar/bottom_bar.dart';
 import 'package:get/get.dart';
 import 'app/routes/app_pages.dart';
 
@@ -24,9 +24,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Smart Hotel',
-      // home: SplashScreen(),
-      // We use routeName so that we dont need to remember the name
-      initialRoute: BottomNaviBar.routeName,
+      initialRoute: Routes.HOME,
       getPages: AppPages.routes,
     );
   }
