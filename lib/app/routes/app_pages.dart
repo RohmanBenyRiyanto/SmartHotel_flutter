@@ -16,6 +16,8 @@ import 'package:smart_hotel/app/modules/signin/bindings/signin_binding.dart';
 import 'package:smart_hotel/app/modules/signin/views/signin_view.dart';
 import 'package:smart_hotel/app/modules/signup/bindings/signup_binding.dart';
 import 'package:smart_hotel/app/modules/signup/views/signup_view.dart';
+import 'package:smart_hotel/app/modules/splashscreen/bindings/splashscreen_binding.dart';
+import 'package:smart_hotel/app/modules/splashscreen/views/splashscreen_view.dart';
 
 part 'app_routes.dart';
 
@@ -64,6 +66,11 @@ class AppPages {
       name: _Paths.FORGETPASSWORD,
       page: () => ForgetpasswordView(),
       binding: ForgetpasswordBinding(),
+    ),
+    GetPage(
+      name: _Paths.SPLASHSCREEN,
+      page: () => SplashscreenView(),
+      binding: SplashscreenBinding(),
     ),
   ];
 }

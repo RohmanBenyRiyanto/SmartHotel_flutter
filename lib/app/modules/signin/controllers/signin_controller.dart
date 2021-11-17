@@ -1,20 +1,7 @@
 import 'package:get/get.dart';
+import 'package:smart_hotel/app/controllers/auth_controller.dart';
 
 class SigninController extends GetxController {
   //TODO: Implement SigninController
-
-  final count = 0.obs;
-  @override
-  void onInit() {
-    super.onInit();
-  }
-
-  @override
-  void onReady() {
-    super.onReady();
-  }
-
-  @override
-  void onClose() {}
-  void increment() => count.value++;
+  final authController = Get.find<AuthController>();
 }
