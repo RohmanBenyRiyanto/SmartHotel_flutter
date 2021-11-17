@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:smart_hotel/sign/sign_in/sign_in.dart';
-import 'package:smart_hotel/theme/color.dart';
+// import 'package:smart_hotel/sign/sign_in/sign_in.dart';
+import 'package:smart_hotel/app/theme/color.dart';
 
 class SplashScreen extends StatefulWidget {
   static String routeName = "/splashscreen";
@@ -15,10 +15,12 @@ class _SplashScreenState extends State<SplashScreen> {
   // This is logic change page
   void initState() {
     super.initState();
-    Timer(Duration(seconds: 4), (){
-      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (_) => SignIn()));
+    Timer(Duration(seconds: 4), () {
+      Navigator.of(context)
+          .pushReplacement(MaterialPageRoute(builder: (_) => SignIn()));
     });
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
