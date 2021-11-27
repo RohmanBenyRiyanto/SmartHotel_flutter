@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:get/get.dart';
 import 'package:smart_hotel/app/widgets/default_button.dart';
 import 'package:smart_hotel/app/widgets/secondary_button_with_image.dart';
 import 'package:smart_hotel/app/theme/color.dart';
 import 'package:flutter/gestures.dart';
 
-class SignForm extends StatelessWidget {
+import '../controllers/signin_controller.dart';
+
+class SignForm extends GetView<SigninController> {
   @override
   Widget build(BuildContext context) {
     return Form(
@@ -117,7 +120,7 @@ class SignForm extends StatelessWidget {
             Secondary_Button_Img(
               icon: "assets/svg/logo_google.svg",
               text: "Sign in with Google",
-              press: () {},
+              press: () => controller.authController.signInWithGoogle(),
             ),
             SizedBox(
               height: 15,

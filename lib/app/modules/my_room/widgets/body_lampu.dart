@@ -8,7 +8,7 @@ import 'package:smart_hotel/app/theme/color.dart';
 import 'package:switcher_button/switcher_button.dart';
 import 'package:dotted_line/dotted_line.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:awesome_slider/awesome_slider.dart';
+// import 'package:awesome_slider/awesome_slider.dart';
 import 'package:flutter_colorpicker/flutter_colorpicker.dart';
 
 // ignore: must_be_immutable
@@ -122,34 +122,34 @@ class _BodyLampuState extends State<BodyLampu> {
               ),
               IgnorePointer(
                 ignoring: onoff,
-                child: AwesomeSlider(
-                  value: valueOnTextWidget,
-                  min: 0.0,
-                  max: 100.0,
-                  thumbColor: onoff ? color_off : Color(0xFF100887),
-                  roundedRectangleThumbRadius: 100.0,
-                  thumbSize: 24.0,
-                  activeLineStroke: 5.0,
-                  activeLineColor: onoff ? color_off : color_main,
-                  inactiveLineColor: color_off,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      Icon(
-                        Icons.light,
-                        color: color_white,
-                        size: 18.0,
-                      ),
-                    ],
-                  ),
-                  onChanged: (double value) {
-                    setState(
-                      () {
-                        valueOnTextWidget = value;
-                      },
-                    );
-                  },
-                ),
+                // child: AwesomeSlider(
+                //   value: valueOnTextWidget,
+                //   min: 0.0,
+                //   max: 100.0,
+                //   thumbColor: onoff ? color_off : Color(0xFF100887),
+                //   roundedRectangleThumbRadius: 100.0,
+                //   thumbSize: 24.0,
+                //   activeLineStroke: 5.0,
+                //   activeLineColor: onoff ? color_off : color_main,
+                //   inactiveLineColor: color_off,
+                //   child: Row(
+                //     mainAxisAlignment: MainAxisAlignment.center,
+                //     children: <Widget>[
+                //       Icon(
+                //         Icons.light,
+                //         color: color_white,
+                //         size: 18.0,
+                //       ),
+                //     ],
+                //   ),
+                //   onChanged: (double value) {
+                //     setState(
+                //       () {
+                //         valueOnTextWidget = value;
+                //       },
+                //     );
+                //   },
+                // ),
               ),
             ],
           ),

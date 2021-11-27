@@ -4,4 +4,9 @@ import 'package:smart_hotel/app/controllers/auth_controller.dart';
 class SigninController extends GetxController {
   //TODO: Implement SigninController
   final authController = Get.find<AuthController>();
+
+  @override
+  void onClose() {
+    super.onClose();
+  }
 }

@@ -1,13 +1,15 @@
-// @dart=2.9
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:smart_hotel/app/theme/color.dart';
 
-// import 'bottom_bar/bottom_bar.dart';
+import 'package:smart_hotel/app/controllers/auth_controller.dart';
 import 'package:get/get.dart';
+import 'package:smart_hotel/app/widgets/loading.dart';
 import 'app/routes/app_pages.dart';
+
+// import 'bottom_bar/bottom_bar.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -16,6 +18,7 @@ void main() async {
 }
 
 class MyApp extends StatelessWidget {
+  final authController = Get.put(AuthController(), permanent: true);
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -24,11 +27,25 @@ class MyApp extends StatelessWidget {
         statusBarColor: color_status,
       ),
     );
-    return GetMaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Smart Hotel',
-      initialRoute: Routes.SPLASHSCREEN,
-      getPages: AppPages.routes,
+    return StreamBuilder<User?>(
+      stream: authController.streamAuthStatus,
+      builder: (context, snapsot) {
+        print(snapsot.data);
+        if (snapsot.connectionState == ConnectionState.active) {
+          return GetMaterialApp(
+            debugShowCheckedModeBanner: false,
+            title: 'Smart Hotel',
+            // initialRoute:
+            //     snapsot.data != null ? Routes.HOME : Routes.SPLASHSCREEN,
+            initialRoute:
+                snapsot.data != null && snapsot.data!.emailVerified == true
+                    ? Routes.HOME
+                    : Routes.SPLASHSCREEN,
+            getPages: AppPages.routes,
+          );
+        }
+        return LoadingView();
+      },
     );
   }
 }
