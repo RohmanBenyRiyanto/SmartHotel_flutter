@@ -18,7 +18,7 @@ class SearchAccountView extends GetView {
             height: 20,
           ),
           onPressed: () {
-            print('BALIK KIRI WAE');
+            Get.back();
           },
           splashColor: Colors.transparent,
           highlightColor: Colors.transparent,

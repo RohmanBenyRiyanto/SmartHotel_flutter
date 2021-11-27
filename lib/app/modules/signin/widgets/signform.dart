@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
+import 'package:smart_hotel/app/routes/app_pages.dart';
 import 'package:smart_hotel/app/widgets/default_button.dart';
 import 'package:smart_hotel/app/widgets/secondary_button_with_image.dart';
 import 'package:smart_hotel/app/theme/color.dart';
@@ -100,7 +101,7 @@ class SignForm extends GetView<SigninController> {
                       ),
                       recognizer: TapGestureRecognizer()
                         ..onTap = () {
-                          print('SAYA LUPA AWOKWOKWOWK');
+                          Get.toNamed(Routes.FORGETPASSWORD);
                         },
                     ),
                   ],
@@ -140,7 +141,7 @@ class SignForm extends GetView<SigninController> {
                 RichText(
                   text: TextSpan(
                     children: [
-                      new TextSpan(
+                      TextSpan(
                         text: 'Sign Up',
                         style: TextStyle(
                           color: color_purple,
@@ -148,7 +149,10 @@ class SignForm extends GetView<SigninController> {
                           fontSize: 16,
                           fontWeight: FontWeight.w600,
                         ),
-                        recognizer: TapGestureRecognizer()..onTap = () {},
+                        recognizer: TapGestureRecognizer()
+                          ..onTap = () {
+                            Get.toNamed(Routes.SIGNUP);
+                          },
                       ),
                     ],
                   ),

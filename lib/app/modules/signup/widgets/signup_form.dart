@@ -1,17 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:get/get.dart';
+import 'package:smart_hotel/app/modules/signup/controllers/signup_controller.dart';
+import 'package:smart_hotel/app/routes/app_pages.dart';
 import 'package:smart_hotel/app/widgets/default_button.dart';
 import 'package:smart_hotel/app/theme/color.dart';
 import 'package:flutter/gestures.dart';
 
-class SignUpForm extends StatefulWidget {
-  SignUpForm({Key? key}) : super(key: key);
-
-  @override
-  _SignUpFormState createState() => _SignUpFormState();
-}
-
-class _SignUpFormState extends State<SignUpForm> {
+class SignUpForm extends GetView<SignupController> {
   @override
   Widget build(BuildContext context) {
     return Form(
@@ -189,7 +185,7 @@ class _SignUpFormState extends State<SignUpForm> {
                         ),
                         recognizer: TapGestureRecognizer()
                           ..onTap = () {
-                            print('MASUK BOSKU');
+                            Get.back();
                           },
                       ),
                     ],
