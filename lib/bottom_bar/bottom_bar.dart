@@ -1,38 +1,40 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-// import 'package:smart_hotel/Profile/profile.dart';
+import 'package:get/get.dart';
 import 'package:smart_hotel/bottom_bar/fixfloatingbutton.dart';
-// import 'package:smart_hotel/home/home.dart';
 import 'package:smart_hotel/my_flutter_app_icons.dart';
+import 'package:smart_hotel/app/theme/color.dart';
+
+// import 'package:smart_hotel/Profile/profile.dart';
+// import 'package:smart_hotel/home/home.dart';
 // import 'package:smart_hotel/my_room/my_room.dart';
 // import 'package:smart_hotel/sign/forgot_password/search_account.dart';
 // import 'package:smart_hotel/sign/sign_in/sign_in.dart';
-import 'package:smart_hotel/app/theme/color.dart';
 
-class BottomNaviBar extends StatefulWidget {
-  static String routeName = "/bottom_navi_bar";
+// class BottomNaviBar extends StatefulWidget {
+//   static String routeName = "/bottom_navi_bar";
 
-  @override
-  _BottomNaviBarState createState() => _BottomNaviBarState();
-}
+//   @override
+//   _BottomNaviBarState createState() => _BottomNaviBarState();
+// }
 
-class _BottomNaviBarState extends State<BottomNaviBar> {
-  int currentIndex = 0;
-  final List<Widget> body = [
-    // Home(),
-    // SignIn(),
-    // MyRoom(),
-    // profile(),
-  ];
+class BottomNaviBar extends GetView {
+  // int currentIndex = 0;
+  // final List<Widget> body = [
+  //   Home(),
+  //   SignIn(),
+  //   MyRoom(),
+  //   profile(),
+  // ];
   @override
   Widget build(BuildContext context) {
     final bool showFab = MediaQuery.of(context).viewInsets.bottom == 0.0;
     return Scaffold(
-      extendBody: true,
-      body: SafeArea(
-        child: body[currentIndex],
-        bottom: false,
-      ),
+      // extendBody: true,
+      // body: SafeArea(
+      //   child: body[currentIndex],
+      //   bottom: false,
+      // ),
       floatingActionButtonLocation: const FixedCenterDockedFabLocation(),
       floatingActionButton: FloatingActionButton(
         backgroundColor: color_main,
@@ -81,7 +83,7 @@ class _BottomNaviBarState extends State<BottomNaviBar> {
                   size: 18.0,
                 ),
               ),
-              label: 'History       ',
+              label: 'History',
               activeIcon: Container(
                 margin: EdgeInsets.only(right: 20),
                 child: Icon(
@@ -100,7 +102,7 @@ class _BottomNaviBarState extends State<BottomNaviBar> {
                   size: 16.0,
                 ),
               ),
-              label: '        My Room',
+              label: 'My Room',
               activeIcon: Container(
                 margin: EdgeInsets.only(left: 20),
                 child: Icon(
@@ -125,20 +127,20 @@ class _BottomNaviBarState extends State<BottomNaviBar> {
             ),
           ],
           backgroundColor: color_white,
-          currentIndex: currentIndex,
+          // currentIndex: currentIndex,
           selectedItemColor: color_main,
           unselectedItemColor: color_abu,
-          onTap: onTap,
+          // onTap: onTap,
         ),
       ),
     );
   }
 
-  void onTap(int index) {
-    setState(() {
-      currentIndex = index;
-    });
-  }
+  // void onTap(int index) {
+  //   setState(() {
+  //     currentIndex = index;
+  //   });
+  // }
 }
 
 //Pop Up
