@@ -158,7 +158,9 @@ class SignUpForm extends GetView<SignupController> {
             ),
             DefaultButton(
               text: "Sign Up",
-              press: () {},
+              press: () => controller.authController.signUp(
+                  controller.emailController.text,
+                  controller.passController.text),
             ),
             SizedBox(
               height: 20,
