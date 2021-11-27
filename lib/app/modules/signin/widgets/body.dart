@@ -4,8 +4,6 @@ import 'package:smart_hotel/app/modules/signin/widgets/signform.dart';
 import 'package:smart_hotel/app/theme/color.dart';
 
 class body extends StatelessWidget {
-  static String routeName = "/body";
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
