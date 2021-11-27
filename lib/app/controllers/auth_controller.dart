@@ -88,4 +88,9 @@ class AuthController extends GetxController {
       }
     }
   }
+
+  void signOut() async {
+    await FirebaseAuth.instance.signOut();
+    Get.offAllNamed(Routes.SIGNIN);
+  }
 }

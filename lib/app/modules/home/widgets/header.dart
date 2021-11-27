@@ -1,10 +1,15 @@
 import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:get/get.dart';
+import 'package:smart_hotel/app/controllers/auth_controller.dart';
+import 'package:smart_hotel/app/modules/home/controllers/home_controller.dart';
 import 'package:smart_hotel/app/theme/color.dart';
 import 'package:smart_hotel/app/theme/const.dart';
 
-class HeaderWithSearchBox extends StatelessWidget {
+final authController = Get.find<AuthController>();
+
+class HeaderWithSearchBox extends GetView<HomeController> {
   const HeaderWithSearchBox({
     Key? key,
     required this.size,
@@ -119,9 +124,7 @@ class HeaderWithSearchBox extends StatelessWidget {
                     ),
                   ),
                   ElevatedButton(
-                    onPressed: () {
-                      print("Cari");
-                    },
+                    onPressed: () => authController.signOut(),
                     child: SvgPicture.asset("assets/svg/mini_search.svg"),
                     style: ElevatedButton.styleFrom(
                       shape: CircleBorder(),
