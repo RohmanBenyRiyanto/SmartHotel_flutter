@@ -43,6 +43,7 @@ class SignUpForm extends GetView<SignupController> {
                   gapPadding: 10,
                 ),
               ),
+              controller: controller.usernameController,
             ),
             SizedBox(
               height: 30,
@@ -75,6 +76,7 @@ class SignUpForm extends GetView<SignupController> {
                   gapPadding: 10,
                 ),
               ),
+              controller: controller.emailController,
             ),
             SizedBox(
               height: 30,
@@ -112,6 +114,7 @@ class SignUpForm extends GetView<SignupController> {
                   gapPadding: 10,
                 ),
               ),
+              controller: controller.passController,
             ),
             SizedBox(
               height: 30,

@@ -47,6 +47,7 @@ class AuthController extends GetxController {
     );
 
     // Once signed in, return the UserCredential
+    // await auth.signInWithCredential(credential);
     try {
       await auth.signInWithCredential(credential);
       Get.offAllNamed(Routes.HOME);
