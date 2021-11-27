@@ -45,6 +45,7 @@ class SignForm extends GetView<SigninController> {
                   gapPadding: 10,
                 ),
               ),
+              controller: controller.emailController,
             ),
             SizedBox(
               height: 30,
@@ -82,6 +83,7 @@ class SignForm extends GetView<SigninController> {
                   gapPadding: 10,
                 ),
               ),
+              controller: controller.passController,
             ),
             SizedBox(
               height: 10,
@@ -113,7 +115,9 @@ class SignForm extends GetView<SigninController> {
             ),
             DefaultButton(
               text: "Sign in",
-              press: () {},
+              press: () => controller.authController.signIn(
+                  controller.emailController.text,
+                  controller.passController.text),
             ),
             SizedBox(
               height: 20,
