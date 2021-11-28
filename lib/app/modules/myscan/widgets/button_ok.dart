@@ -1,12 +1,14 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
-import 'package:smart_hotel/theme/color.dart';
+import 'package:smart_hotel/app/theme/color.dart';
 
 class ButtonOk extends StatelessWidget {
   const ButtonOk({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: 150,
       child: TextButton(
         style: TextButton.styleFrom(

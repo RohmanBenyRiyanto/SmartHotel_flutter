@@ -2,12 +2,8 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:smart_hotel/components/button/default_button.dart';
-import 'package:smart_hotel/components/button/secondary_button_with_image.dart';
-import 'package:smart_hotel/Profile/components/header_profile.dart';
-import 'package:smart_hotel/my_room/components/header.dart';
-import 'package:smart_hotel/theme/color.dart';
 import 'package:flutter/gestures.dart';
+import 'package:smart_hotel/app/theme/color.dart';
 
 class BodyMyRoom extends StatelessWidget {
   static String routeName = "/body_my_room";

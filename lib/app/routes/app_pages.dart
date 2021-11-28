@@ -10,8 +10,12 @@ import 'package:smart_hotel/app/modules/home/bindings/home_binding.dart';
 import 'package:smart_hotel/app/modules/home/views/home_view.dart';
 import 'package:smart_hotel/app/modules/my_room/bindings/my_room_binding.dart';
 import 'package:smart_hotel/app/modules/my_room/views/my_room_view.dart';
+import 'package:smart_hotel/app/modules/myscan/bindings/myscan_binding.dart';
+import 'package:smart_hotel/app/modules/myscan/views/myscan_view.dart';
 import 'package:smart_hotel/app/modules/navbar/bindings/navbar_binding.dart';
 import 'package:smart_hotel/app/modules/navbar/views/navbar_view.dart';
+import 'package:smart_hotel/app/modules/pesankamar/bindings/pesankamar_binding.dart';
+import 'package:smart_hotel/app/modules/pesankamar/views/pesankamar_view.dart';
 import 'package:smart_hotel/app/modules/profile/bindings/profile_binding.dart';
 import 'package:smart_hotel/app/modules/profile/views/profile_view.dart';
 import 'package:smart_hotel/app/modules/signin/bindings/signin_binding.dart';
@@ -78,6 +82,16 @@ class AppPages {
       name: _Paths.NAVBAR,
       page: () => NavbarView(),
       binding: NavbarBinding(),
+    ),
+    GetPage(
+      name: _Paths.MYSCAN,
+      page: () => MyscanView(),
+      binding: MyscanBinding(),
+    ),
+    GetPage(
+      name: _Paths.PESANKAMAR,
+      page: () => PesankamarView(),
+      binding: PesankamarBinding(),
     ),
   ];
 }

@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:smart_hotel/MyScan/widget/Button_OK.dart';
-import 'package:smart_hotel/MyScan/widget/Custom_Card.dart';
-import 'package:smart_hotel/MyScan/widget/Logo_Image.dart';
-import 'package:smart_hotel/theme/color.dart';
 
-class MyScan extends StatelessWidget {
-  const MyScan({Key? key}) : super(key: key);
+import 'package:get/get.dart';
+import 'package:smart_hotel/app/modules/myscan/widgets/Button_OK.dart';
+import 'package:smart_hotel/app/modules/myscan/widgets/Custom_Card.dart';
+import 'package:smart_hotel/app/modules/myscan/widgets/Logo_Image.dart';
+import 'package:smart_hotel/app/theme/color.dart';
 
+import '../controllers/myscan_controller.dart';
+
+class MyscanView extends GetView<MyscanController> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

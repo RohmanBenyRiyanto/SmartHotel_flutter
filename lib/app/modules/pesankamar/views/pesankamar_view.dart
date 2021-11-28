@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:smart_hotel/pesan_kamar/components/body_pesan_kamar.dart';
-import 'package:smart_hotel/theme/color.dart';
 
-class PesanKamar extends StatelessWidget {
-  static String routeName = "/pesan_kamar";
+import 'package:get/get.dart';
+import 'package:smart_hotel/app/modules/pesankamar/widgets/body_pesan_kamar.dart';
+import 'package:smart_hotel/app/theme/color.dart';
 
+import '../controllers/pesankamar_controller.dart';
+
+class PesankamarView extends GetView<PesankamarController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
