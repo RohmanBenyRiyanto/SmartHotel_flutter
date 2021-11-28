@@ -35,9 +35,9 @@ class MyApp extends StatelessWidget {
           return GetMaterialApp(
             debugShowCheckedModeBanner: false,
             title: 'Smart Hotel',
-            // initialRoute: Routes.HOME,
-            initialRoute:
-                snapsot.data != null ? Routes.HOME : Routes.SPLASHSCREEN,
+            initialRoute: Routes.NAVBAR,
+            // initialRoute:
+            //     snapsot.data != null ? Routes.HOME : Routes.SPLASHSCREEN,
             // initialRoute:
             //     snapsot.data != null && snapsot.data!.emailVerified == true
             //         ? Routes.HOME
