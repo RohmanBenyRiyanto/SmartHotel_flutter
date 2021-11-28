@@ -207,7 +207,7 @@ Widget _buildPopupDialog(BuildContext context) {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
-            Container(
+            SizedBox(
               height: 38,
               child: TextButton(
                 style: TextButton.styleFrom(
