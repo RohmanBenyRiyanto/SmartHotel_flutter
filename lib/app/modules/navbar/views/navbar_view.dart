@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:smart_hotel/app/modules/navbar/widgets/alert_dialog.dart';
 import 'package:smart_hotel/app/modules/navbar/widgets/fixfloatingbutton.dart';
 import 'package:smart_hotel/app/theme/color.dart';
 import 'package:smart_hotel/my_flutter_app_icons.dart';
@@ -19,7 +20,7 @@ class NavbarView extends GetView<NavbarController> {
       floatingActionButton: FloatingActionButton(
         backgroundColor: color_main,
         onPressed: () {
-          print('tests');
+          Get.dialog(QrDialog());
         },
         tooltip: 'Scan',
         child: Icon(MyFlutterApp.ic_qrcode, size: 32),
