@@ -145,7 +145,7 @@ class BottomNaviBar extends GetView {
 
 //Pop Up
 Widget _buildPopupDialog(BuildContext context) {
-  return new AlertDialog(
+  return AlertDialog(
     shape: RoundedRectangleBorder(
       borderRadius: BorderRadius.all(
         Radius.circular(10.0),
