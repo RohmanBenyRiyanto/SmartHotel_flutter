@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 import 'package:smart_hotel/app/modules/navbar/widgets/alert_dialog.dart';
 import 'package:smart_hotel/app/modules/navbar/widgets/fixfloatingbutton.dart';
 import 'package:smart_hotel/app/theme/color.dart';
-import 'package:smart_hotel/my_flutter_app_icons.dart';
+import 'package:smart_hotel/app/theme/my_flutter_app_icons.dart';
 
 import '../controllers/navbar_controller.dart';
 

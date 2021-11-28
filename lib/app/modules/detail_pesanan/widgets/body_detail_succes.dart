@@ -3,7 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import '../widgets/cek_in.dart';
 import '../widgets/cek_out.dart';
 import '../widgets/detail_succes_content.dart';
-import 'package:smart_hotel/my_flutter_app_icons.dart';
+import 'package:smart_hotel/app/theme/my_flutter_app_icons.dart';
 import 'package:smart_hotel/app/theme/color.dart';
 import 'package:smart_hotel/app/theme/const.dart';
 import 'package:dotted_line/dotted_line.dart';
