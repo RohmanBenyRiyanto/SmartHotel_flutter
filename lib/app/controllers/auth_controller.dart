@@ -12,7 +12,7 @@ class AuthController extends GetxController {
     try {
       await auth.createUserWithEmailAndPassword(
           email: email, password: password);
-      Get.offAllNamed(Routes.HOME);
+      Get.offAllNamed(Routes.NAVBAR);
       // UserCredential userCredential = await auth.createUserWithEmailAndPassword(
       //   email: email,
       //   password: password,
@@ -43,7 +43,7 @@ class AuthController extends GetxController {
         email: email,
         password: password,
       );
-      Get.offAllNamed(Routes.HOME);
+      Get.offAllNamed(Routes.NAVBAR);
       // if (userCredential.user!.emailVerified) {
       //   Get.offAllNamed(Routes.HOME);
       // } else {
@@ -78,7 +78,7 @@ class AuthController extends GetxController {
     // Once signed in, return the UserCredential
     try {
       await auth.signInWithCredential(credential);
-      Get.offAllNamed(Routes.HOME);
+      Get.offAllNamed(Routes.NAVBAR);
     } on FirebaseAuthException catch (e) {
       if (e.code == 'user-not-found') {
         print('No user found for that email.');
