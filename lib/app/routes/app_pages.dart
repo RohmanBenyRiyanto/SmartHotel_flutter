@@ -10,6 +10,8 @@ import 'package:smart_hotel/app/modules/home/bindings/home_binding.dart';
 import 'package:smart_hotel/app/modules/home/views/home_view.dart';
 import 'package:smart_hotel/app/modules/my_room/bindings/my_room_binding.dart';
 import 'package:smart_hotel/app/modules/my_room/views/my_room_view.dart';
+import 'package:smart_hotel/app/modules/navbar/bindings/navbar_binding.dart';
+import 'package:smart_hotel/app/modules/navbar/views/navbar_view.dart';
 import 'package:smart_hotel/app/modules/profile/bindings/profile_binding.dart';
 import 'package:smart_hotel/app/modules/profile/views/profile_view.dart';
 import 'package:smart_hotel/app/modules/signin/bindings/signin_binding.dart';
@@ -71,6 +73,11 @@ class AppPages {
       name: _Paths.SPLASHSCREEN,
       page: () => SplashscreenView(),
       binding: SplashscreenBinding(),
+    ),
+    GetPage(
+      name: _Paths.NAVBAR,
+      page: () => NavbarView(),
+      binding: NavbarBinding(),
     ),
   ];
 }
