@@ -9,8 +9,6 @@ import 'package:get/get.dart';
 import 'package:smart_hotel/app/widgets/loading.dart';
 import 'app/routes/app_pages.dart';
 
-// import 'bottom_bar/bottom_bar.dart';
-
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
