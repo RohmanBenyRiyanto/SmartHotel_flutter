@@ -96,10 +96,11 @@ class SignUpForm extends GetView<SignupController> {
                     fontSize: 18,
                     fontWeight: FontWeight.w400),
                 floatingLabelBehavior: FloatingLabelBehavior.always,
-                suffixIcon: Padding(
+                suffixIcon: IconButton(
                   padding:
                       EdgeInsets.only(right: 18, top: 10, bottom: 10, left: 10),
-                  child: SvgPicture.asset('assets/svg/show_psswrd.svg'),
+                  icon: SvgPicture.asset('assets/svg/show_psswrd.svg'),
+                  onPressed: () => print('test'),
                 ),
                 contentPadding:
                     EdgeInsets.symmetric(horizontal: 20, vertical: 16),
@@ -114,6 +115,7 @@ class SignUpForm extends GetView<SignupController> {
                   gapPadding: 10,
                 ),
               ),
+              obscureText: true,
               controller: controller.passController,
             ),
             SizedBox(
@@ -127,17 +129,18 @@ class SignUpForm extends GetView<SignupController> {
                     fontSize: 20,
                     fontFamily: 'Poppins',
                     fontWeight: FontWeight.w600),
-                hintText: "Confirmasi Your Password",
+                hintText: "Confirm Your Password",
                 focusColor: color_main,
                 hintStyle: TextStyle(
                     color: color_abu,
                     fontSize: 18,
                     fontWeight: FontWeight.w400),
                 floatingLabelBehavior: FloatingLabelBehavior.always,
-                suffixIcon: Padding(
+                suffixIcon: IconButton(
                   padding:
                       EdgeInsets.only(right: 18, top: 10, bottom: 10, left: 10),
-                  child: SvgPicture.asset('assets/svg/show_psswrd.svg'),
+                  icon: SvgPicture.asset('assets/svg/show_psswrd.svg'),
+                  onPressed: () => print('test'),
                 ),
                 contentPadding:
                     EdgeInsets.symmetric(horizontal: 20, vertical: 16),
@@ -152,6 +155,7 @@ class SignUpForm extends GetView<SignupController> {
                   gapPadding: 10,
                 ),
               ),
+              obscureText: true,
             ),
             SizedBox(
               height: 20,
