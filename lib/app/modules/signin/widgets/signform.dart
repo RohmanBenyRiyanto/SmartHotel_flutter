@@ -101,6 +101,7 @@ class SignForm extends GetView<SigninController> {
                   gapPadding: 10,
                 ),
               ),
+              keyboardType: TextInputType.visiblePassword,
               obscureText: true,
               controller: controller.passController,
               onSaved: (value) => controller.email = value!,
@@ -139,9 +140,6 @@ class SignForm extends GetView<SigninController> {
             ),
             DefaultButton(
               text: "Sign in",
-              // press: () => controller.authController.signIn(
-              //     controller.emailController.text,
-              //     controller.passController.text),
               press: () => controller.checkForm(),
             ),
             SizedBox(
@@ -175,7 +173,7 @@ class SignForm extends GetView<SigninController> {
                         style: TextStyle(
                           color: color_purple,
                           fontFamily: 'Poppins',
-                          fontSize: 16,
+                          fontSize: 14,
                           fontWeight: FontWeight.w600,
                         ),
                         recognizer: TapGestureRecognizer()

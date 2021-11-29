@@ -132,6 +132,7 @@ class SignUpForm extends GetView<SignupController> {
                   gapPadding: 10,
                 ),
               ),
+              keyboardType: TextInputType.visiblePassword,
               obscureText: true,
               controller: controller.passController,
               onSaved: (value) => controller.password = value!,
@@ -223,7 +224,7 @@ class SignUpForm extends GetView<SignupController> {
                         style: TextStyle(
                           color: color_purple,
                           fontFamily: 'Poppins',
-                          fontSize: 16,
+                          fontSize: 14,
                           fontWeight: FontWeight.w600,
                         ),
                         recognizer: TapGestureRecognizer()
