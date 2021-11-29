@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:smart_hotel/app/modules/signin/widgets/signform.dart';
 import '../widgets/signup_form.dart';
 import 'package:smart_hotel/app/theme/color.dart';
 
 class body_singup extends StatelessWidget {
-  static String routeName = "/body";
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -55,8 +52,8 @@ class body_singup extends StatelessWidget {
                   height: 30,
                 ),
                 Container(
-                  height: 465,
-                  width: 380,
+                  // height: 380,
+                  // width: 380,
                   decoration: BoxDecoration(
                     color: color_white,
                     borderRadius: BorderRadius.circular(10),
