@@ -32,7 +32,7 @@ class SigninController extends GetxController {
     return null;
   }
 
-  void checkForm() {
+  void checkForm() async {
     final isValid = loginFormKey.currentState!.validate();
     if (!isValid) {
       return;
