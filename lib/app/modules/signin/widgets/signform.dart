@@ -45,6 +45,11 @@ class SignForm extends GetView<SigninController> {
                   borderSide: BorderSide(color: color_purple),
                   gapPadding: 10,
                 ),
+                focusedErrorBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(6),
+                  borderSide: BorderSide(color: color_red),
+                  gapPadding: 10,
+                ),
               ),
               keyboardType: TextInputType.emailAddress,
               controller: controller.emailController,
@@ -88,6 +93,11 @@ class SignForm extends GetView<SigninController> {
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(6),
                   borderSide: BorderSide(color: color_purple),
+                  gapPadding: 10,
+                ),
+                focusedErrorBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(6),
+                  borderSide: BorderSide(color: color_red),
                   gapPadding: 10,
                 ),
               ),

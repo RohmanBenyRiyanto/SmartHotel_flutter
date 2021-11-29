@@ -72,7 +72,14 @@ class SignUpForm extends GetView<SignupController> {
                   gapPadding: 10,
                 ),
                 focusedBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(6),
                   borderSide: BorderSide(color: color_purple),
+                  gapPadding: 10,
+                ),
+                focusedErrorBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(6),
+                  borderSide: BorderSide(color: color_red),
+                  gapPadding: 10,
                 ),
               ),
               keyboardType: TextInputType.emailAddress,
@@ -115,7 +122,14 @@ class SignUpForm extends GetView<SignupController> {
                   gapPadding: 10,
                 ),
                 focusedBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(6),
                   borderSide: BorderSide(color: color_purple),
+                  gapPadding: 10,
+                ),
+                focusedErrorBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(6),
+                  borderSide: BorderSide(color: color_red),
+                  gapPadding: 10,
                 ),
               ),
               obscureText: true,
@@ -158,7 +172,14 @@ class SignUpForm extends GetView<SignupController> {
                   gapPadding: 10,
                 ),
                 focusedBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(6),
                   borderSide: BorderSide(color: color_purple),
+                  gapPadding: 10,
+                ),
+                focusedErrorBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(6),
+                  borderSide: BorderSide(color: color_red),
+                  gapPadding: 10,
                 ),
               ),
               obscureText: true,
