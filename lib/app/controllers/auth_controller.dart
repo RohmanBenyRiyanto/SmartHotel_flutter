@@ -1,7 +1,9 @@
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:smart_hotel/app/routes/app_pages.dart';
+import 'package:smart_hotel/app/theme/color.dart';
 
 class AuthController extends GetxController {
   FirebaseAuth auth = FirebaseAuth.instance;
@@ -44,6 +46,15 @@ class AuthController extends GetxController {
         password: password,
       );
       Get.offAllNamed(Routes.NAVBAR);
+      Get.snackbar(
+        "Succesfully Signed in",
+        "Signed in succesfully with " +
+            userCredential.user!.displayName.toString(),
+        snackPosition: SnackPosition.BOTTOM,
+        colorText: color_white,
+        backgroundColor: color_black,
+        margin: EdgeInsets.all(15),
+      );
       // if (userCredential.user!.emailVerified) {
       //   Get.offAllNamed(Routes.HOME);
       // } else {
@@ -55,10 +66,29 @@ class AuthController extends GetxController {
       // }
     } on FirebaseAuthException catch (e) {
       if (e.code == 'user-not-found') {
-        print('No user found for that email.');
+        // print('No user found for that email.');
+        Get.snackbar(
+          "User not found",
+          "No user found for that email",
+          snackPosition: SnackPosition.BOTTOM,
+          colorText: color_white,
+          backgroundColor: color_red,
+          margin: EdgeInsets.all(15),
+        );
       } else if (e.code == 'wrong-password') {
-        print('Wrong password provided for that user.');
+        // print('Invalid password.');
+        Get.snackbar(
+          "Wrong Password",
+          "Wrong password provided for that user",
+          snackPosition: SnackPosition.BOTTOM,
+          colorText: color_white,
+          backgroundColor: color_red,
+          margin: EdgeInsets.all(15),
+        );
+        // Get.defaultDialog();
       }
+    } catch (e) {
+      print(e);
     }
   }
 
@@ -79,6 +109,14 @@ class AuthController extends GetxController {
     try {
       await auth.signInWithCredential(credential);
       Get.offAllNamed(Routes.NAVBAR);
+      Get.snackbar(
+        "Succesfully Signed in",
+        "Signed in succesfully with " + googleUser!.displayName.toString(),
+        snackPosition: SnackPosition.BOTTOM,
+        colorText: color_white,
+        backgroundColor: color_black,
+        margin: EdgeInsets.all(15),
+      );
     } on FirebaseAuthException catch (e) {
       if (e.code == 'user-not-found') {
         print('No user found for that email.');
@@ -91,5 +129,13 @@ class AuthController extends GetxController {
   void signOut() async {
     await FirebaseAuth.instance.signOut();
     Get.offAllNamed(Routes.SIGNIN);
+    Get.snackbar(
+      "Succesfully Signed out",
+      "Signed out succesfully",
+      snackPosition: SnackPosition.BOTTOM,
+      colorText: color_white,
+      backgroundColor: color_black,
+      margin: EdgeInsets.all(15),
+    );
   }
 }
