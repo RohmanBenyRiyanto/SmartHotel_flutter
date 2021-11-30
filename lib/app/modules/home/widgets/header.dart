@@ -1,7 +1,9 @@
-import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
+
+import 'package:badges/badges.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
+
 import 'package:smart_hotel/app/controllers/auth_controller.dart';
 import 'package:smart_hotel/app/modules/home/controllers/home_controller.dart';
 import 'package:smart_hotel/app/theme/color.dart';
@@ -124,7 +126,7 @@ class HeaderWithSearchBox extends GetView<HomeController> {
                     ),
                   ),
                   ElevatedButton(
-                    onPressed: () => authController.signOut(),
+                    onPressed: () => print('test'),
                     child: SvgPicture.asset("assets/svg/mini_search.svg"),
                     style: ElevatedButton.styleFrom(
                       shape: CircleBorder(),

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import '../widgets/detail_pembayaran.dart';
+
 import 'package:get/get.dart';
 
 import '../controllers/detail_hotel_controller.dart';
+import '../widgets/detail_pembayaran.dart';
 
 class DetailHotelView extends GetView<DetailHotelController> {
   @override
@@ -105,34 +106,34 @@ class DetailHotelView extends GetView<DetailHotelController> {
             top: 360,
             right: 10,
             left: 10,
-            child: new Text(
+            child: Text(
               "Fasilitas",
               style: TextStyle(fontWeight: FontWeight.w800),
             ),
           ),
-          new Positioned(
+          Positioned(
             top: 0.0,
             left: 0.0,
             right: 0.0,
             child: AppBar(
               title: Text(''), // You can add title here
-              leading: new IconButton(
-                icon: new Icon(Icons.arrow_back, color: Colors.grey[900]),
-                onPressed: () {},
+              leading: IconButton(
+                icon: Icon(Icons.arrow_back, color: Colors.grey[900]),
+                onPressed: () => Get.back(),
               ),
               backgroundColor:
                   Colors.blue.withOpacity(0), //You can make this transparent
               elevation: 0.0, //No shadow
             ),
           ),
-          new Positioned(
+          Positioned(
             top: 0.0,
             left: 300.0,
             right: 0.0,
             child: AppBar(
               title: Text(''), // You can add title here
-              leading: new IconButton(
-                icon: new Icon(Icons.favorite, color: Colors.pink[700]),
+              leading: IconButton(
+                icon: Icon(Icons.favorite, color: Colors.pink[700]),
                 onPressed: () {},
               ),
               backgroundColor:
@@ -278,7 +279,7 @@ class DetailHotelView extends GetView<DetailHotelController> {
             top: 480,
             right: 10,
             left: 10,
-            child: new Text(
+            child: Text(
               "Ulasan Teratas",
               style: TextStyle(fontWeight: FontWeight.w800),
             ),
@@ -354,8 +355,8 @@ class DetailHotelView extends GetView<DetailHotelController> {
         ],
       ),
       bottomNavigationBar: SizedBox(
-        width: 80,
-        height: 45,
+        // width: 80,
+        // height: 45,
         child: TextButton(
           style: TextButton.styleFrom(
             backgroundColor: Colors.pink[300],
@@ -363,10 +364,7 @@ class DetailHotelView extends GetView<DetailHotelController> {
               borderRadius: BorderRadius.circular(10),
             ),
           ),
-          onPressed: () {
-            Navigator.push(context,
-                MaterialPageRoute(builder: (context) => detail_hotel()));
-          },
+          onPressed: () => print('test'),
           child: Text(
             "Booking",
             style: TextStyle(

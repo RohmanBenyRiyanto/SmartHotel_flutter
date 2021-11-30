@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:get/get.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+
 import 'package:smart_hotel/app/routes/app_pages.dart';
 import 'package:smart_hotel/app/theme/color.dart';
 
@@ -48,7 +50,7 @@ class AuthController extends GetxController {
       Get.offAllNamed(Routes.NAVBAR);
       Get.snackbar(
         "Succesfully Signed in",
-        "Signed in succesfully with " +
+        "Signed in succesfully as " +
             userCredential.user!.displayName.toString(),
         snackPosition: SnackPosition.BOTTOM,
         colorText: color_white,
@@ -111,7 +113,7 @@ class AuthController extends GetxController {
       Get.offAllNamed(Routes.NAVBAR);
       Get.snackbar(
         "Succesfully Signed in",
-        "Signed in succesfully with " + googleUser!.displayName.toString(),
+        "Signed in succesfully as " + googleUser!.displayName.toString(),
         snackPosition: SnackPosition.BOTTOM,
         colorText: color_white,
         backgroundColor: color_black,

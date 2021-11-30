@@ -1,15 +1,19 @@
 import 'dart:ui';
 
-// import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import '../widgets/costum_slider.dart';
-import 'package:smart_hotel/app/theme/const.dart';
-import 'package:smart_hotel/app/theme/color.dart';
-import 'package:switcher_button/switcher_button.dart';
+
 import 'package:dotted_line/dotted_line.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-// import 'package:awesome_slider/awesome_slider.dart';
 import 'package:flutter_colorpicker/flutter_colorpicker.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:switcher_button/switcher_button.dart';
+
+import 'package:smart_hotel/app/theme/color.dart';
+import 'package:smart_hotel/app/theme/const.dart';
+
+import '../widgets/costum_slider.dart';
+
+// import 'package:flutter/cupertino.dart';
+// import 'package:awesome_slider/awesome_slider.dart';
 
 // ignore: must_be_immutable
 class BodyLampu extends StatefulWidget {

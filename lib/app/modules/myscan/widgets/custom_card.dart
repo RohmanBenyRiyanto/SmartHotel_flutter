@@ -1,7 +1,8 @@
-// ignore_for_file: file_names
-
 import 'package:flutter/material.dart';
+
 import 'package:smart_hotel/app/theme/color.dart';
+
+// ignore_for_file: file_names
 
 class CustomCard extends StatelessWidget {
   const CustomCard({Key? key}) : super(key: key);

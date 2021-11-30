@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:smart_hotel/app/theme/color.dart';
-import '../widgets/body_detail_succes.dart';
 import 'package:get/get.dart';
 
+import 'package:smart_hotel/app/theme/color.dart';
+
 import '../controllers/detail_pesanan_controller.dart';
+import '../widgets/body_detail_succes.dart';
 
 class DetailPesananView extends GetView<DetailPesananController> {
   @override

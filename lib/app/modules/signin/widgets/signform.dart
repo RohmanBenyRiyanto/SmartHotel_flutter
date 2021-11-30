@@ -1,11 +1,13 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
+
 import 'package:smart_hotel/app/routes/app_pages.dart';
+import 'package:smart_hotel/app/theme/color.dart';
 import 'package:smart_hotel/app/widgets/default_button.dart';
 import 'package:smart_hotel/app/widgets/secondary_button_with_image.dart';
-import 'package:smart_hotel/app/theme/color.dart';
-import 'package:flutter/gestures.dart';
 
 import '../controllers/signin_controller.dart';
 

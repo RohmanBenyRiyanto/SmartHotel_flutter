@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+
 import 'package:flutter_svg/flutter_svg.dart';
+
+import 'package:smart_hotel/app/theme/color.dart';
+
 import '../widgets/body_lampu.dart';
 import '../widgets/body_my_room.dart';
-import 'package:smart_hotel/app/theme/color.dart';
 
 class Lampu extends StatelessWidget {
   static String routeName = "/lampu";

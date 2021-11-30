@@ -1,12 +1,16 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
+
 import 'package:flutter_svg/flutter_svg.dart';
-import '../models/sekitar_model.dart';
+import 'package:get/get.dart';
+
+import 'package:smart_hotel/app/modules/home/controllers/home_controller.dart';
+import 'package:smart_hotel/app/routes/app_pages.dart';
 import 'package:smart_hotel/app/theme/color.dart';
 import 'package:smart_hotel/app/theme/const.dart';
 
-class CardsSekitarAnda extends StatelessWidget {
+import '../models/sekitar_model.dart';
+
+class CardsSekitarAnda extends GetView<HomeController> {
   const CardsSekitarAnda({Key? key}) : super(key: key);
 
   @override
@@ -32,7 +36,7 @@ class CardsSekitarAnda extends StatelessWidget {
               ],
             ),
           ),
-          Container(
+          SizedBox(
             height: 340,
             child: ListView.builder(
               padding: EdgeInsets.only(right: 16, bottom: 0),
@@ -68,66 +72,72 @@ class CardsSekitarAnda extends StatelessWidget {
                                 left: 10, right: 10, top: 14, bottom: 14),
                             child: Column(
                               children: <Widget>[
-                                Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    Text(
-                                      sekitars.nama_hotel,
-                                      style: TextStyle(
-                                          color: color_black,
-                                          fontFamily: 'Poppins',
-                                          fontSize: 18,
-                                          fontWeight: FontWeight.w600,
-                                          height: 1.2),
-                                      maxLines: 2,
-                                    ),
-                                    Row(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      children: [
-                                        Text(
-                                          sekitars.rating,
-                                          style: TextStyle(
+                                GestureDetector(
+                                  onTap: () => print(sekitars.namaHotel),
+                                  child: Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Text(
+                                        sekitars.namaHotel,
+                                        style: TextStyle(
                                             color: color_black,
                                             fontFamily: 'Poppins',
-                                            fontSize: 12,
+                                            fontSize: 18,
                                             fontWeight: FontWeight.w600,
+                                            height: 1.2),
+                                        maxLines: 2,
+                                      ),
+                                      Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        children: [
+                                          Text(
+                                            sekitars.rating,
+                                            style: TextStyle(
+                                              color: color_black,
+                                              fontFamily: 'Poppins',
+                                              fontSize: 12,
+                                              fontWeight: FontWeight.w600,
+                                            ),
                                           ),
-                                        ),
-                                        Padding(
-                                          padding: EdgeInsets.only(left: 5),
-                                          child: SvgPicture.asset(
-                                            'assets/svg/star.svg',
-                                            width: 11,
+                                          Padding(
+                                            padding: EdgeInsets.only(left: 5),
+                                            child: SvgPicture.asset(
+                                              'assets/svg/star.svg',
+                                              width: 11,
+                                            ),
                                           ),
-                                        ),
-                                      ],
-                                    ),
-                                  ],
+                                        ],
+                                      ),
+                                    ],
+                                  ),
                                 ),
                                 SizedBox(
                                   height: 8,
                                 ),
-                                Row(
-                                  children: [
-                                    Padding(
-                                      padding: EdgeInsets.only(right: 5),
-                                      child: SvgPicture.asset(
-                                        'assets/svg/location.svg',
-                                        width: 11,
+                                GestureDetector(
+                                  onTap: () => print(sekitars.kota),
+                                  child: Row(
+                                    children: [
+                                      Padding(
+                                        padding: EdgeInsets.only(right: 5),
+                                        child: SvgPicture.asset(
+                                          'assets/svg/location.svg',
+                                          width: 11,
+                                        ),
                                       ),
-                                    ),
-                                    Text(
-                                      sekitars.kota,
-                                      style: TextStyle(
-                                        color: color_abu,
-                                        fontFamily: 'Poppins',
-                                        fontSize: 11,
-                                        fontWeight: FontWeight.w400,
+                                      Text(
+                                        sekitars.kota,
+                                        style: TextStyle(
+                                          color: color_abu,
+                                          fontFamily: 'Poppins',
+                                          fontSize: 11,
+                                          fontWeight: FontWeight.w400,
+                                        ),
                                       ),
-                                    ),
-                                  ],
+                                    ],
+                                  ),
                                 ),
                                 SizedBox(
                                   height: 8,
@@ -214,33 +224,36 @@ class CardsSekitarAnda extends StatelessWidget {
                           ),
                         ),
                       ),
-                      Container(
-                        width: 250,
-                        decoration: BoxDecoration(
-                          color: color_white,
-                          borderRadius: BorderRadius.circular(10),
-                          boxShadow: [
-                            BoxShadow(
-                              color: Colors.black26,
-                              offset: Offset(0.0, 2.0),
-                              blurRadius: 6.0,
-                            ),
-                          ],
-                        ),
-                        child: Stack(
-                          children: <Widget>[
-                            ClipRRect(
-                              borderRadius: BorderRadius.circular(10),
-                              child: Image(
-                                width: 250,
-                                height: 167,
-                                image: AssetImage(sekitars.imageUrl),
-                                fit: BoxFit.cover,
+                      GestureDetector(
+                        onTap: () => Get.toNamed(Routes.DETAIL_HOTEL),
+                        child: Container(
+                          width: 250,
+                          decoration: BoxDecoration(
+                            color: color_white,
+                            borderRadius: BorderRadius.circular(10),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.black26,
+                                offset: Offset(0.0, 2.0),
+                                blurRadius: 6.0,
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
+                          child: Stack(
+                            children: <Widget>[
+                              ClipRRect(
+                                borderRadius: BorderRadius.circular(10),
+                                child: Image(
+                                  width: 250,
+                                  height: 167,
+                                  image: AssetImage(sekitars.imageUrl),
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
-                      )
+                      ),
                     ],
                   ),
                 );
