@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
+
 import 'package:smart_hotel/app/modules/myscan/widgets/Button_OK.dart';
 import 'package:smart_hotel/app/modules/myscan/widgets/Custom_Card.dart';
 import 'package:smart_hotel/app/modules/myscan/widgets/Logo_Image.dart';

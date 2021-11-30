@@ -1,10 +1,12 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
+
 import 'package:smart_hotel/app/modules/signup/controllers/signup_controller.dart';
-import 'package:smart_hotel/app/widgets/default_button.dart';
 import 'package:smart_hotel/app/theme/color.dart';
-import 'package:flutter/gestures.dart';
+import 'package:smart_hotel/app/widgets/default_button.dart';
 
 class SignUpForm extends GetView<SignupController> {
   @override

@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+
 import 'package:flutter_svg/flutter_svg.dart';
-import '../widgets/body_profile.dart';
-import 'package:smart_hotel/app/theme/color.dart';
 import 'package:get/get.dart';
 
+import 'package:smart_hotel/app/modules/home/widgets/header.dart';
+import 'package:smart_hotel/app/theme/color.dart';
+
 import '../controllers/profile_controller.dart';
+import '../widgets/body_profile.dart';
 
 class ProfileView extends GetView<ProfileController> {
   @override
@@ -25,17 +28,14 @@ class ProfileView extends GetView<ProfileController> {
           Padding(
             padding: EdgeInsets.only(right: 8),
             child: IconButton(
-              icon: Container(
-                  child: IconButton(
+              icon: IconButton(
                 icon: Icon(
                   Icons.logout_rounded,
                   size: 22,
                   color: color_white,
                 ),
-                onPressed: () {
-                  print('keluar');
-                },
-              )),
+                onPressed: () => authController.signOut(),
+              ),
               onPressed: () {
                 print('Pesan');
               },
@@ -53,9 +53,7 @@ class ProfileView extends GetView<ProfileController> {
               color: color_white,
             ),
           ),
-          onPressed: () {
-            print('BALIK KIRI WAE');
-          },
+          onPressed: () => Get.back(),
           splashColor: Colors.transparent,
           highlightColor: Colors.transparent,
         ),

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import '../widgets/detail_pembayaran.dart';
+
 import 'package:get/get.dart';
 
 import '../controllers/detail_hotel_controller.dart';
+import '../widgets/detail_pembayaran.dart';
 
 class DetailHotelView extends GetView<DetailHotelController> {
   @override

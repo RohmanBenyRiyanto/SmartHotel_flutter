@@ -1,12 +1,14 @@
-import 'package:firebase_core/firebase_core.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:smart_hotel/app/theme/color.dart';
+
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:get/get.dart';
 
 import 'package:smart_hotel/app/controllers/auth_controller.dart';
-import 'package:get/get.dart';
+import 'package:smart_hotel/app/theme/color.dart';
 import 'package:smart_hotel/app/widgets/loading.dart';
+
 import 'app/routes/app_pages.dart';
 
 void main() async {
@@ -33,9 +35,9 @@ class MyApp extends StatelessWidget {
           return GetMaterialApp(
             debugShowCheckedModeBanner: false,
             title: 'Smart Hotel',
-            initialRoute: Routes.NAVBAR,
-            // initialRoute:
-            //     snapsot.data != null ? Routes.HOME : Routes.SPLASHSCREEN,
+            // initialRoute: Routes.SIGNUP,
+            initialRoute:
+                snapsot.data != null ? Routes.NAVBAR : Routes.SPLASHSCREEN,
             // initialRoute:
             //     snapsot.data != null && snapsot.data!.emailVerified == true
             //         ? Routes.HOME

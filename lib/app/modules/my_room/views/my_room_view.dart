@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+
 import 'package:flutter_svg/flutter_svg.dart';
-import '../widgets/body_my_room.dart';
-import 'package:smart_hotel/app/theme/color.dart';
 import 'package:get/get.dart';
 
+import 'package:smart_hotel/app/theme/color.dart';
+
 import '../controllers/my_room_controller.dart';
+import '../widgets/body_my_room.dart';
 
 class MyRoomView extends GetView<MyRoomController> {
   @override

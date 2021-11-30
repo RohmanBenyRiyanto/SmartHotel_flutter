@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'header_profile.dart';
+
 import 'package:smart_hotel/app/theme/color.dart';
+
+import 'header_profile.dart';
 
 class body_profile extends StatelessWidget {
   static String routeName = "/body_profile";

@@ -20,7 +20,7 @@ class MyRoomContent {
     required this.NoKamar,
     required this.QrCode,
   });
-    get length => null;
+  get length => null;
 }
 
 var myroomcontent = [

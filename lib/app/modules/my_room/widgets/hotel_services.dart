@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+
 import 'package:flutter_svg/flutter_svg.dart';
-import '../widgets/lampu.dart';
-import '../widgets/AC.dart';
+
 import 'package:smart_hotel/app/theme/color.dart';
 import 'package:smart_hotel/app/theme/const.dart';
+
+import '../widgets/AC.dart';
+import '../widgets/lampu.dart';
 
 class hotel_services extends StatelessWidget {
   const hotel_services({

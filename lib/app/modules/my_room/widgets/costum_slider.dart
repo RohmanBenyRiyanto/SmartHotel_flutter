@@ -1,4 +1,4 @@
-    import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 
 class SliderThumbShape extends SliderComponentShape {
   /// Create a slider thumb that draws a circle.
@@ -41,24 +41,25 @@ class SliderThumbShape extends SliderComponentShape {
 
   @override
   Size getPreferredSize(bool isEnabled, bool isDiscrete) {
-    return Size.fromRadius(isEnabled == true ? enabledThumbRadius : _disabledThumbRadius);
+    return Size.fromRadius(
+        isEnabled == true ? enabledThumbRadius : _disabledThumbRadius);
   }
 
   @override
   void paint(
-      PaintingContext context,
-      Offset center, {
-        required Animation<double> activationAnimation,
-        required Animation<double> enableAnimation,
-        required bool isDiscrete,
-        required TextPainter labelPainter,
-        required RenderBox parentBox,
-        required SliderThemeData sliderTheme,
-        required TextDirection textDirection,
-        required double value,
-        required double textScaleFactor,
-        required Size sizeWithOverflow,
-      }) {
+    PaintingContext context,
+    Offset center, {
+    required Animation<double> activationAnimation,
+    required Animation<double> enableAnimation,
+    required bool isDiscrete,
+    required TextPainter labelPainter,
+    required RenderBox parentBox,
+    required SliderThemeData sliderTheme,
+    required TextDirection textDirection,
+    required double value,
+    required double textScaleFactor,
+    required Size sizeWithOverflow,
+  }) {
     assert(context != null);
     assert(center != null);
     assert(enableAnimation != null);
@@ -80,12 +81,17 @@ class SliderThumbShape extends SliderComponentShape {
       end: pressedElevation,
     );
 
-    final double evaluatedElevation = elevationTween.evaluate(activationAnimation);
+    final double evaluatedElevation =
+        elevationTween.evaluate(activationAnimation);
 
     {
       var math;
       final Path path = Path()
-        ..addArc(Rect.fromCenter(center: center, width: 1 * radius, height: 1 * radius), 0, math.pi * 2);
+        ..addArc(
+            Rect.fromCenter(
+                center: center, width: 1 * radius, height: 1 * radius),
+            0,
+            math.pi * 2);
 
       Paint paint = Paint()..color = Colors.black;
       paint.strokeWidth = 15;

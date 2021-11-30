@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import '../widgets/body_singup.dart';
+
 import 'package:get/get.dart';
 
 import '../controllers/signup_controller.dart';
+import '../widgets/body_singup.dart';
 
 class SignupView extends GetView<SignupController> {
   @override

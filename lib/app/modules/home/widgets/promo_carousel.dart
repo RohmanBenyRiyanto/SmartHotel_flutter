@@ -1,11 +1,14 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:simple_shadow/simple_shadow.dart';
-import '../models/promo.dart';
+
 import 'package:smart_hotel/app/theme/color.dart';
 import 'package:smart_hotel/app/theme/const.dart';
+
+import '../models/promo.dart';
 
 class Promo_carousel extends StatelessWidget {
   final double _borderRadius = 10.0;

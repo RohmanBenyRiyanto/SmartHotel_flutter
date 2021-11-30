@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:smart_hotel/app/theme/color.dart';
-import '../widgets/header.dart';
-import '../widgets/schedule_carousel.dart';
-import '../widgets/promo_carousel.dart';
-import '../widgets/sekitar_anda.dart';
+
 import 'package:get/get.dart';
 
+import 'package:smart_hotel/app/theme/color.dart';
+
 import '../controllers/home_controller.dart';
+import '../widgets/header.dart';
+import '../widgets/promo_carousel.dart';
+import '../widgets/schedule_carousel.dart';
+import '../widgets/sekitar_anda.dart';
 
 class HomeView extends GetView<HomeController> {
   @override

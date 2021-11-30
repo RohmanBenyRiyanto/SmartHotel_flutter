@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:smart_hotel/app/widgets/small_button.dart';
-import 'package:smart_hotel/app/theme/color.dart';
 import 'package:get/get.dart';
+
+import 'package:smart_hotel/app/theme/color.dart';
+import 'package:smart_hotel/app/widgets/small_button.dart';
 
 import '../controllers/forgetpassword_controller.dart';
 

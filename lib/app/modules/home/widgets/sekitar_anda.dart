@@ -1,13 +1,14 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
+
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
+
 import 'package:smart_hotel/app/modules/home/controllers/home_controller.dart';
 import 'package:smart_hotel/app/routes/app_pages.dart';
-import '../models/sekitar_model.dart';
 import 'package:smart_hotel/app/theme/color.dart';
 import 'package:smart_hotel/app/theme/const.dart';
+
+import '../models/sekitar_model.dart';
 
 class CardsSekitarAnda extends GetView<HomeController> {
   const CardsSekitarAnda({Key? key}) : super(key: key);
@@ -72,13 +73,13 @@ class CardsSekitarAnda extends GetView<HomeController> {
                             child: Column(
                               children: <Widget>[
                                 GestureDetector(
-                                  onTap: () => print(sekitars.nama_hotel),
+                                  onTap: () => print(sekitars.namaHotel),
                                   child: Row(
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceBetween,
                                     children: [
                                       Text(
-                                        sekitars.nama_hotel,
+                                        sekitars.namaHotel,
                                         style: TextStyle(
                                             color: color_black,
                                             fontFamily: 'Poppins',
@@ -138,26 +139,6 @@ class CardsSekitarAnda extends GetView<HomeController> {
                                     ],
                                   ),
                                 ),
-                                // Row(
-                                //   children: [
-                                //     Padding(
-                                //       padding: EdgeInsets.only(right: 5),
-                                //       child: SvgPicture.asset(
-                                //         'assets/svg/location.svg',
-                                //         width: 11,
-                                //       ),
-                                //     ),
-                                //     Text(
-                                //       sekitars.kota,
-                                //       style: TextStyle(
-                                //         color: color_abu,
-                                //         fontFamily: 'Poppins',
-                                //         fontSize: 11,
-                                //         fontWeight: FontWeight.w400,
-                                //       ),
-                                //     ),
-                                //   ],
-                                // ),
                                 SizedBox(
                                   height: 8,
                                 ),

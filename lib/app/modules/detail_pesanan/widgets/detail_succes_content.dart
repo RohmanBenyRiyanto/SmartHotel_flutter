@@ -30,7 +30,7 @@ class DetailSuccesContent {
     required this.NoKamar,
     required this.QrCode,
   });
-    get length => null;
+  get length => null;
 }
 
 var detail_succes_content = [

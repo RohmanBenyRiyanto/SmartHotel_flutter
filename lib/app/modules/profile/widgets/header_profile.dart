@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+
 import 'package:flutter_svg/flutter_svg.dart';
-import 'content_profile.dart';
+
 import 'package:smart_hotel/app/modules/my_room/widgets/content_myroom.dart';
 import 'package:smart_hotel/app/modules/my_room/widgets/hotel_services.dart';
 import 'package:smart_hotel/app/theme/color.dart';
 import 'package:smart_hotel/app/theme/const.dart';
+
+import 'content_profile.dart';
 
 class HeaderProfile extends StatelessWidget {
   const HeaderProfile({Key? key}) : super(key: key);

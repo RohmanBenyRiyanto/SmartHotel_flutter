@@ -1,4 +1,3 @@
-
 class Upcomming {
   String imageUrl;
   String header_upcom;
@@ -12,6 +11,7 @@ class Upcomming {
 
   get length => null;
 }
+
 List<Upcomming> upcommings = [
   Upcomming(
     imageUrl: 'assets/images/hotel_two.png',

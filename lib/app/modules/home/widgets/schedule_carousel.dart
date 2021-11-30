@@ -1,10 +1,13 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+
 import 'package:flutter_svg/flutter_svg.dart';
-import '../models/cards_upcoming_model.dart';
+
 import 'package:smart_hotel/app/theme/color.dart';
 import 'package:smart_hotel/app/theme/const.dart';
+
+import '../models/cards_upcoming_model.dart';
 
 class ScheduleCarousel extends StatelessWidget {
   const ScheduleCarousel({Key? key}) : super(key: key);

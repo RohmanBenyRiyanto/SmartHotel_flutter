@@ -2,8 +2,6 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 
-
-
 const color_white = Colors.white;
 const color_main = Color(0xFF7986CB);
 const color_purple = Color(0xFF5C5CA7);

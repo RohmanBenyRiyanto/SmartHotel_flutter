@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+
 import 'package:get/get.dart';
+
 import 'package:smart_hotel/app/theme/color.dart';
 
 class QrDialog extends GetView {
