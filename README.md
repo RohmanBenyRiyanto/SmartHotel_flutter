@@ -9,3 +9,19 @@ Smotel adalah sebuah aplikasi berbasis Flutter yang mengangkat ide Smart Hotel, 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/57904667/144228075-83263654-aac1-4258-b594-f7b2ff83a21a.png" width="350">
 </p>
+
+## Team
+
+Berikut adalah team dalam pengembangan aplikasi Smotel:
+
+* UI/UX & Frontend Dev
+  * [Rohman Beny Riyanto](https://github.com/RohmanBenyRiyanto)
+  * [Reva Rahardian](https://github.com/Rahardians)
+  * [Fitra Fatimah Putri](https://github.com/fitrafputri)
+  * [Faiz Zaki Ramadhan](https://github.com/faizzaki14)
+  * [Yolanda Al Hidayah Pasaribu](https://github.com/yolandapasaribu)
+
+* Backend Dev
+  * [Putu Restu Indrawan](https://github.com/restuindrawan)
+  * [Evan Devara](https://github.com/Evan-Devara)
+  * [Vito Raditya Fauzan](https://github.com/vitoradityafauzan)
