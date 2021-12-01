@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.smart_hotel">
    <application
-        android:label="smart_hotel"
+        android:label="Smart Hotel"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
