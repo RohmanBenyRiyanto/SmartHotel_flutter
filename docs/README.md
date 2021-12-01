@@ -1,3 +1,3 @@
-# What is OpenCore and who is this guide for
+# Apa itu Smotel?
 
 Smotel adalah sebuah aplikasi berbasis Flutter yang mengangkat ide Smart Hotel, yang dimana smotel 
