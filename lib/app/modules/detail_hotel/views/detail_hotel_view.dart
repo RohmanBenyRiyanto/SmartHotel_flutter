@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:smart_hotel/app/theme/color.dart';
 
 import '../controllers/detail_hotel_controller.dart';
 import '../widgets/detail_pembayaran.dart';
@@ -354,21 +355,24 @@ class DetailHotelView extends GetView<DetailHotelController> {
           )
         ],
       ),
-      bottomNavigationBar: SizedBox(
-        // width: 80,
-        // height: 45,
-        child: TextButton(
-          style: TextButton.styleFrom(
-            backgroundColor: Colors.pink[300],
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(10),
+      bottomNavigationBar: Padding(
+        padding: EdgeInsets.symmetric(horizontal: 16.0),
+        child: SizedBox(
+          // width: 80,
+          // height: 45,
+          child: TextButton(
+            style: TextButton.styleFrom(
+              backgroundColor: color_main,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),
             ),
-          ),
-          onPressed: () => print('test'),
-          child: Text(
-            "Booking",
-            style: TextStyle(
-              color: Colors.white,
+            onPressed: () => print('test'),
+            child: Text(
+              "Booking",
+              style: TextStyle(
+                color: Colors.white,
+              ),
             ),
           ),
         ),
