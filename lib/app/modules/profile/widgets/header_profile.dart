@@ -271,6 +271,9 @@ class HeaderProfile extends StatelessWidget {
                   ],
                 ),
               ),
+              SizedBox(
+                height: 50,
+              ),
             ],
           );
         },

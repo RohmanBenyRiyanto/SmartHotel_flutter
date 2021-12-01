@@ -8,11 +8,16 @@ import 'package:smart_hotel/app/theme/const.dart';
 import '../widgets/AC.dart';
 import '../widgets/lampu.dart';
 
-class hotel_services extends StatelessWidget {
+class hotel_services extends StatefulWidget {
   const hotel_services({
     Key? key,
   }) : super(key: key);
 
+  @override
+  State<hotel_services> createState() => _hotel_servicesState();
+}
+
+class _hotel_servicesState extends State<hotel_services> {
   @override
   Widget build(BuildContext context) {
     return Container(

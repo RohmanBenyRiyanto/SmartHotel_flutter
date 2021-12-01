@@ -10,9 +10,14 @@ import 'package:smart_hotel/app/theme/const.dart';
 import '../widgets/content_myroom.dart';
 import '../widgets/hotel_services.dart';
 
-class HeaderMyRoom extends StatelessWidget {
+class HeaderMyRoom extends StatefulWidget {
   const HeaderMyRoom({Key? key}) : super(key: key);
 
+  @override
+  State<HeaderMyRoom> createState() => _HeaderMyRoomState();
+}
+
+class _HeaderMyRoomState extends State<HeaderMyRoom> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
