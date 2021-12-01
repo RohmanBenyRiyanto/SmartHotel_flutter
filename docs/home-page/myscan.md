@@ -5,15 +5,17 @@ MyScan pada app Smotel sendiri diimplementasikan dengan GetX state management ya
 Berikut adalah fungsi yang kami gunakan untuk mengarahkan QR ke sebuah dialog
 ```dart
 floatingActionButtonLocation: const FixedCenterDockedFabLocation(),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: color_main,
-        onPressed: () {
-          Get.dialog(QrDialog());
-        },
-        tooltip: 'Scan',
-        child: Icon(MyFlutterApp.ic_qrcode, size: 32),
-        elevation: 0,
-      ),
+floatingActionButton: FloatingActionButton(
+    backgroundColor: color_main,
+    onPressed: () {
+        Get.dialog(QrDialog());
+    },
+    tooltip: 'Scan',
+    child: Icon(MyFlutterApp.ic_qrcode, size: 32),
+    elevation: 0,
+),
 ```
 
 Berikut adalah tampilannya:
+
+![image](https://user-images.githubusercontent.com/57904667/144222006-94dd7493-ee99-46d2-8e53-160ba0a0ce2f.png)
