@@ -58,3 +58,4 @@ String? validateEmail(String value) {
 
 Berikut adalah tampilannya:
 
+![image](https://user-images.githubusercontent.com/57904667/144208849-f7c8a0b7-1e8b-4ef1-a440-c20fa5e9a2ff.png)
