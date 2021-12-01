@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/restuindrawan/SmartHotel_flutter.git"
+    "url": "git+https://github.com/RohmanBenyRiyanto/SmartHotel_flutter.git"
   },
   "keywords": [
     "Smart",
@@ -22,9 +22,9 @@
   "author": "PPTIK",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/restuindrawan/SmartHotel_flutter/issues"
+    "url": "https://github.com/RohmanBenyRiyanto/SmartHotel_flutter/issues"
   },
-  "homepage": "https://github.com/restuindrawan/SmartHotel_flutter#readme",
+  "homepage": "https://github.com/RohmanBenyRiyanto/SmartHotel_flutter#readme",
   "devDependencies": {
     "vuepress": "^2.0.0-beta.27"
   }
