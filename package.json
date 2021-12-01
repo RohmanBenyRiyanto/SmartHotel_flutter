@@ -24,7 +24,7 @@
   "bugs": {
     "url": "https://github.com/RohmanBenyRiyanto/SmartHotel_flutter/issues"
   },
-  "homepage": "https://github.com/RohmanBenyRiyanto/SmartHotel_flutter#readme",
+  "homepage": "https://github.com/RohmanBenyRiyanto/SmartHotel_flutter",
   "devDependencies": {
     "vuepress": "^2.0.0-beta.27"
   }
