@@ -10,6 +10,9 @@ Smotel adalah sebuah aplikasi berbasis Flutter yang mengangkat ide Smart Hotel, 
   <img src="https://user-images.githubusercontent.com/57904667/144228075-83263654-aac1-4258-b594-f7b2ff83a21a.png" width="350">
 </p>
 
+### Dokumentasi
+[Lihat Dokumentasi](https://smotel-9f156.web.app/)
+
 ## Team
 
 Berikut adalah team dalam pengembangan aplikasi Smotel:
