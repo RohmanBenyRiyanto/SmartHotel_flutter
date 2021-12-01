@@ -1,4 +1,6 @@
 # Forget Password Page
-Register page pada aplikasi smotel kami mengimplementasikan Firebase Authentication, yang dimana memudahkan dalam membuat prosesnya tersendiri. Form disini sudah mengimplementasikan validasi yang dimana memeriksa apakah email dan passoword valid? dan juga memeriksa apabila akun ada atau tidak.
+Forget passoword pada aplikasi smotel digunakan untuk mencari atau membuat password baru pada akun yang telah ada.
 
 Berikut adalah tampilannya:
+
+![image](https://user-images.githubusercontent.com/57904667/144209221-02e6d3db-fd3f-4231-bd6d-3ced495cf0bd.png)
