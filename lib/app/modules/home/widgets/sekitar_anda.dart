@@ -214,6 +214,7 @@ class CardsSekitarAnda extends GetView<HomeController> {
                                         ),
                                         onPressed: () {
                                           print('Pilih Kamar');
+                                          Get.toNamed(Routes.DETAIL_HOTEL);
                                         },
                                       ),
                                     ),

@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 
 import 'package:smart_hotel/app/theme/color.dart';
 
+import 'package:smart_hotel/app/modules/navbar/views/navbar_view.dart';
 import '../controllers/my_room_controller.dart';
 import '../widgets/body_my_room.dart';
 
@@ -53,6 +54,10 @@ class MyRoomView extends GetView<MyRoomController> {
           ),
           onPressed: () {
             print('BALIK KIRI WAE');
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => NavbarView()),
+            );
           },
           splashColor: Colors.transparent,
           highlightColor: Colors.transparent,

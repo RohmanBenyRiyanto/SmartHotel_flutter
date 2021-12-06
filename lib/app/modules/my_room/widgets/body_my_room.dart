@@ -4,12 +4,9 @@ import 'package:smart_hotel/app/theme/color.dart';
 
 import '../widgets/header.dart';
 
-class BodyMyRoom extends StatefulWidget {
-  @override
-  State<BodyMyRoom> createState() => _BodyMyRoomState();
-}
+class BodyMyRoom extends StatelessWidget {
+  const BodyMyRoom({Key? key}) : super(key: key);
 
-class _BodyMyRoomState extends State<BodyMyRoom> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

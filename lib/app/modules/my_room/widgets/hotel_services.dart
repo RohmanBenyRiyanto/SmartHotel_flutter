@@ -5,19 +5,12 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:smart_hotel/app/theme/color.dart';
 import 'package:smart_hotel/app/theme/const.dart';
 
-import '../widgets/AC.dart';
+import '../widgets/body_ac.dart';
 import '../widgets/lampu.dart';
 
-class hotel_services extends StatefulWidget {
-  const hotel_services({
-    Key? key,
-  }) : super(key: key);
+class hotel_services extends StatelessWidget {
+  const hotel_services({Key? key}) : super(key: key);
 
-  @override
-  State<hotel_services> createState() => _hotel_servicesState();
-}
-
-class _hotel_servicesState extends State<hotel_services> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -143,7 +136,7 @@ class _hotel_servicesState extends State<hotel_services> {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => AC()),
+                    MaterialPageRoute(builder: (context) => BodyAc()),
                   );
                   print("AC clicked");
                 },

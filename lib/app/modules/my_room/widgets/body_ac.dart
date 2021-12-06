@@ -5,28 +5,17 @@ import 'package:getwidget/getwidget.dart';
 import 'package:sleek_circular_slider/sleek_circular_slider.dart';
 import 'package:step_progress_indicator/step_progress_indicator.dart';
 
-// import 'dart:ui';
+import 'package:flutter/cupertino.dart';
 
-// void main() {
-//   runApp(AC());
-// }
+// ignore: must_be_immutable
+class BodyAc extends StatefulWidget {
+  BodyAc({Key? key}) : super(key: key);
 
-class AC extends StatelessWidget {
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-        home: CounterScreenState(),
-        debugShowCheckedModeBanner: false,
-        theme: new ThemeData(scaffoldBackgroundColor: const Color(0xFFEFEFEF)));
-  }
+  State<BodyAc> createState() => _BodyAcState();
 }
 
-class CounterScreenState extends StatefulWidget {
-  @override
-  CounterScreen createState() => CounterScreen();
-}
-
-class CounterScreen extends State<CounterScreenState> {
+class _BodyAcState extends State<BodyAc> {
   static String routeName = "/AC";
   int _counter = 0;
 
@@ -81,10 +70,9 @@ class CounterScreen extends State<CounterScreenState> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                FloatingActionButton(
-                  child: Icon(Icons.add),
-                  backgroundColor:
-                      isSwitched ? Colors.orange[700] : Colors.grey[400],
+                IconButton(
+                  icon: Icon(Icons.add),
+                  color: isSwitched ? Colors.orange[700] : Colors.grey[400],
                   onPressed: _incrementCounter,
                 ),
                 SleekCircularSlider(
@@ -118,12 +106,11 @@ class CounterScreen extends State<CounterScreenState> {
                   max: 32,
                   initialValue: isSwitched ? _counter.toDouble() : 0,
                 ),
-                FloatingActionButton(
-                  child: Icon(
+                IconButton(
+                  icon: Icon(
                     Icons.remove,
                   ),
-                  backgroundColor:
-                      isSwitched ? Colors.orange[700] : Colors.grey[400],
+                  color: isSwitched ? Colors.orange[700] : Colors.grey[400],
                   onPressed: _decrementcrementCounter,
                 )
               ],

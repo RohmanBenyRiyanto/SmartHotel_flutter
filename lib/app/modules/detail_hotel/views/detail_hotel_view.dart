@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:smart_hotel/app/modules/detail_pesanan/views/detail_pesanan_view.dart';
+import 'package:smart_hotel/app/modules/pesankamar/views/pesankamar_view.dart';
 import 'package:smart_hotel/app/theme/color.dart';
 
 import '../controllers/detail_hotel_controller.dart';
@@ -367,7 +369,13 @@ class DetailHotelView extends GetView<DetailHotelController> {
                 borderRadius: BorderRadius.circular(10),
               ),
             ),
-            onPressed: () => print('test'),
+            onPressed: () {
+              print('test');
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => PesankamarView()),
+              );
+            },
             child: Text(
               "Booking",
               style: TextStyle(

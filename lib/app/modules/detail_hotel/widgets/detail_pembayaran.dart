@@ -33,7 +33,7 @@ import '../widgets/detail_succes_content.dart';
 //   }
 // }
 
-class detail_hotel extends StatelessWidget {
+class detail_hotel_konfirmasi extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -390,7 +390,7 @@ class detail_hotel extends StatelessWidget {
                       height: 45,
                       child: TextButton(
                         style: TextButton.styleFrom(
-                          backgroundColor: Colors.pink[300],
+                          backgroundColor: color_orange,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10),
                           ),
