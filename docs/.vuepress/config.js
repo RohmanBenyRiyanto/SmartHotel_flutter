@@ -81,11 +81,11 @@ module.exports = {
                                 link: '/home-page/myroom.md',
                                 children: [{
                                         text: 'Kontrol Lampu',
-                                        link: '/auth-page/register.md',
+                                        link: '/myroom/lampu.md',
                                     },
                                     {
                                         text: 'Kontrol AC',
-                                        link: '/auth-page/forgot.md',
+                                        link: '/myroom/ac.md',
                                     },
                                 ],
                             },
