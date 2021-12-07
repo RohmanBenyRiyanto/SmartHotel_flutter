@@ -37,8 +37,7 @@ module.exports = {
             {
                 text: 'Dokumentasi',
                 // link: '/home-page/',
-                children: [
-                    {
+                children: [{
                         text: 'Splash Screen',
                         link: '/splash/splash.md',
                     },
@@ -71,7 +70,7 @@ module.exports = {
                             },
                             {
                                 text: 'History',
-                                link: '/home-page/myroom.md',
+                                link: '/home-page/history.md',
                             },
                             {
                                 text: 'MyScan',
@@ -79,7 +78,16 @@ module.exports = {
                             },
                             {
                                 text: 'MyRoom',
-                                link: '/home-page/history.md',
+                                link: '/home-page/myroom.md',
+                                children: [{
+                                        text: 'Kontrol Lampu',
+                                        link: '/auth-page/register.md',
+                                    },
+                                    {
+                                        text: 'Kontrol AC',
+                                        link: '/auth-page/forgot.md',
+                                    },
+                                ],
                             },
                             {
                                 text: 'Profile',
