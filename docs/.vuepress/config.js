@@ -69,6 +69,19 @@ module.exports = {
                                 link: '/home-page/home-page.md',
                             },
                             {
+                                text: 'Detail Hotel',
+                                link: '/hotel/detailhotel.md',
+                                children: [{
+                                        text: 'Booking',
+                                        link: '/hotel/booking.md',
+                                    },
+                                    {
+                                        text: 'Pesanan',
+                                        link: '/hotel/pesanan.md',
+                                    },
+                                ],
+                            },
+                            {
                                 text: 'History',
                                 link: '/home-page/history.md',
                             },
